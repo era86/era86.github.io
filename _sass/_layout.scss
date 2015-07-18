@@ -5,7 +5,7 @@
     font-family: $header-font-family;
     //border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    min-height: 90px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -13,9 +13,9 @@
 
 .site-title {
     float: left;
-    line-height: 56px;
+    line-height: 70px;
     margin-bottom: 0;
-    font-size: $large-font-size * 1.5;
+    font-size: $large-font-size * 2;
 
     &,
     &:visited {
@@ -24,9 +24,9 @@
 }
 
 .site-nav {
-    font-size: $base-font-size;
+    font-size: $base-font-size * 1.25;
     float: right;
-    line-height: 56px;
+    line-height: 90px;
 
     .menu-icon {
         display: none;
@@ -164,7 +164,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 0;
 }
 
 .page-heading {
@@ -172,11 +172,16 @@
 }
 
 .post-list {
-    margin-left: 0;
+    margin: 1.75em 0 0 0;
     list-style: none;
 
     > li {
         margin-bottom: $spacing-unit;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 400;
+        margin: 0;
     }
 }
 
@@ -187,7 +192,12 @@
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: $large-font-size;
+}
+
+.post-preview {
+    font-size: $small-font-size;
+    color: $text-color;
 }
 
 
@@ -201,10 +211,10 @@
 }
 
 .post-title {
-    font-size: $large-font-size;
+    font-size: $large-font-size * 1.25;
 
     @include media-query($on-laptop) {
-        font-size: 36px;
+        //font-size: 36px;
     }
 }
 
@@ -213,19 +223,19 @@
 
     h2 {
         @include media-query($on-laptop) {
-            font-size: 28px;
+            //font-size: 28px;
         }
     }
 
     h3 {
         @include media-query($on-laptop) {
-            font-size: 22px;
+            //font-size: 22px;
         }
     }
 
     h4 {
         @include media-query($on-laptop) {
-            font-size: 18px;
+            //font-size: 18px;
         }
     }
 }
