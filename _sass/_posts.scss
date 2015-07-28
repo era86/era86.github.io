@@ -12,8 +12,8 @@
     }
 
     .scaled-down {
-      height: 50%;
-      width: 50%;
+      //height: 70%;
+      //width: 70%;
     }
 
     .bordered {
@@ -21,4 +21,39 @@
     }
 
   }
+}
+
+.post-header {
+    margin-top: 20px;
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: $large-font-size * 1.25;
+
+    @include media-query($on-laptop) {
+        //font-size: 36px;
+    }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        @include media-query($on-laptop) {
+            //font-size: 28px;
+        }
+    }
+
+    h3 {
+        @include media-query($on-laptop) {
+            //font-size: 22px;
+        }
+    }
+
+    h4 {
+        @include media-query($on-laptop) {
+            //font-size: 18px;
+        }
+    }
 }
