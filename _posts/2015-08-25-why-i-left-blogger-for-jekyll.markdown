@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why I left Blogger for Jekyll"
-date:   2015-07-01
+date:   2015-08-25
 comments: true
 categories: new blog
 ---
@@ -74,5 +74,3 @@ Since Jekyll is a static site generator, all of the content is generated *prior 
 Blogger is a good platform for writers looking to quickly publish simple content. The default themes and layouts are, at the very least, pleasing to the eye. The WYSIWYG editor is adequate for delivering basic articles, with the option to edit HTML source directly.
 
 However, for bloggers looking for a fine-tuned experience in designing, creating, and delivering the best content to their readers, a static site generator like Jekyll is a *much* better option.
-
-Thoughts? Questions? Leave me a comment!

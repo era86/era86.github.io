@@ -54,4 +54,4 @@ The default file explorer in Vim is fairly sufficient for very simple navigation
 
 There you have it, a list of plugins making up my "bare-minimum" Vim configuration! Of course, the plugins I have installed will vary depending on the project I'm working on. However, I always start with the foundation of plugins I've outlined above.
 
-Do you have a plugin you can't seem to live without that isn't mentioned? Feel free to share it with me in the comments! Happy Vimming!
+Happy Vimming!
