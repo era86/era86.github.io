@@ -3,19 +3,11 @@ layout: default
 ---
 
 <div class="home">
+  <center>
+    <img src="assets/images/hourglass.gif" />
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <div class="post-preview">{{ post.content | strip_html | truncatewords:50 }}</div>
-      </li>
-    {% endfor %}
-  </ul>
-
+    <h2>Currently working on getting the new blog up!</h2>
+    
+    <h3>For now, please visit the <a class="page-link" href="http://www.runtime-era.blogspot.com">old blog</a>. Thank you for your patience!</h3>
+  </center>
 </div>
