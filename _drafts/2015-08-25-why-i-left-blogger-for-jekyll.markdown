@@ -3,7 +3,6 @@ layout: post
 title:  "Why I left Blogger for Jekyll"
 date:   2015-08-25
 comments: true
-categories: new blog
 ---
 
 After many years on Google's [Blogger](http://www.blogger.com) platform, I've decided to switch over to [Jekyll](http://jekyllrb.com/). The [old site is still up](http://www.runtime-era.blogspot.com), with all of my previous blog posts. However, any new content will be posted here.
