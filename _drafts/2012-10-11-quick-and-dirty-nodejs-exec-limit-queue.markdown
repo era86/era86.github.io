@@ -29,7 +29,7 @@ Error: spawn EMFILE
 
 To solve this, I implemented something like the following:
 
-{% highlight bash %}
+{% highlight javascript %}
 var queue = [];
 var MAX = 20;  // only allow 20 simultaneous exec calls
 var count = 0;  // holds how many execs are running
