@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+![Me Sippin Coffee](/assets/images/me-sippin-coffee.jpg){: .bordered.centered }
+
 Greetings!
 
 I'm a web developer from Seattle who enjoys creating, breaking, and fixing web applications. I love the internet and the technologies built around it. I currently work at [Skytap](https://www.skytap.com/) as a backend software engineer. 
