@@ -3,7 +3,6 @@ layout: post
 title:  "My \"Bare Minimum\" Vim Plugins"
 date:   2015-07-17
 comments: true
-categories: vim programming
 ---
 
 Vim has been my programming editor of choice since about 2012. It's an effective text editor at minimum, but it can be configured into a full-fledged IDE if desired. After learning the ins and outs of Vim, it can be difficult to go back to other basic text editors. 
