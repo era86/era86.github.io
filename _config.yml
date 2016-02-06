@@ -4,7 +4,7 @@ email: ancheta86@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Thoughts about programming, software development, and technology from the perspective of a Seattle software engineer.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "https://era86.github.io" # the base hostname & protocol for your site
 twitter_username: chedda86
 github_username:  era86
 
