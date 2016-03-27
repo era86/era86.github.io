@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Why I left Blogger for Jekyll
-date:   2016-02-08
+date:   2016-03-26
 comments: true
 ---
 
