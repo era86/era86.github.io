@@ -45,7 +45,7 @@ I discovered a plugin called [SyntaxHighlighter](http://alexgorbatchev.com/Synta
 
 [![Blogger Syntax Highlighting](/assets/images/posts/blogger-syntax-highlighter.png){: .bordered }](/assets/images/posts/blogger-syntax-highlighter.png)
 
-**With Jekyll, code syntax highlighting is [built right in](http://jekyllrb.com/docs/posts/#highlighting-code-snippets)**. No third-party Javascript is required to transform the page on load. Since Jekyll uses [Pygments](http://pygments.org), it is capable of highlighting [tons of different programming languages](http://pygments.org/languages/).
+**With Jekyll, code syntax highlighting is [built right in](http://jekyllrb.com/docs/posts/#highlighting-code-snippets)**. No third-party Javascript is required to transform the page on load. Since Jekyll uses [Pygments](http://pygments.org), it is capable of highlighting [tons of different programming languages](http://pygments.org/languages/). (Update: As of Jekyll 3, the default highlighter is [Rogue](http://rouge.jneen.net/).)
 
 {% highlight ruby %}
 # Some Ruby code!
