@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My \"Bare Minimum\" Vim Plugins"
-date:   2016-02-15
+date:   2016-06-17
 comments: true
 ---
 
