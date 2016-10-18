@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Getting My New Macbook Dev-Ready"
-date:   2016-06-13
+date:   2016-10-17
 comments: true
 ---
 
 [![Macbook](/assets/images/posts/macbook.jpg){: .bordered.landing-image.centered }](/assets/images/posts/macbook.jpg)
 
-For my trip to Europe, I purchased a brand new [Macbook](http://www.apple.com/macbook/)! It's the perfect travel companion: lightweight, decent battery life, and just powerful enough to do basic computing (email, blogging, etc).
+For [my trip to Europe](http://urban-trailseeker.blogspot.com/2016/07/backpacks-and-train-tracks-our-month-in.html), I purchased a brand new [Macbook](http://www.apple.com/macbook/)! It's the perfect travel companion: lightweight, decent battery life, and just powerful enough to do basic computing (email, blogging, etc).
 
 I bought it to replace my trusty Thinkpad x220, which I've used as a development machine for about *five* years now. With Ubuntu as my operating system, most everything I needed as a web developer was already installed and set up. Since this Macbook is a brand new laptop, I thought I'd share my process for getting it "dev-ready".
 
