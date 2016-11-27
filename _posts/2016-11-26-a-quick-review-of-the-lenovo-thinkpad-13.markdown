@@ -56,9 +56,11 @@ Based on my requirements, here is the configuration for my Thinkpad 13:
 
 # Size and Weight
 
-Like any stereotypical web developer in Seattle, I enjoy getting out and writing code or browsing [Reddit](http://www.reddit.com) at local coffee shops. I'm not a road warrior by any means, but I didn't want my laptop to be too heavy or bulky to lug around.
+[![](/assets/images/posts/thinkpad-13-top.png){: .bordered }](/assets/images/posts/thinkpad-13-top.png)
 
-The Macbook was perfect in this regard, in that it was extremely thin and light. My X220, with its extended 9-cell battery pack, was a bulky and relatively heavy. The Thinkpad 13 is a nice middle-ground between the two.
+Like any stereotypical web developer in Seattle, I enjoy getting out and writing code or browsing [Reddit](http://www.reddit.com) at local coffee shops. I'm not a road warrior by any means, but I don't want my laptop to be too heavy or bulky to lug around.
+
+The Macbook is perfect in this regard, in that it is extremely thin and light. My X220, with its extended 9-cell battery pack, is bulky and relatively heavy. The Thinkpad 13 is a nice middle-ground between the two.
 
 **Thinkpad 13 Dimensions**
 
@@ -66,8 +68,6 @@ The Macbook was perfect in this regard, in that it was extremely thin and light.
 * Width: 12.69 inches
 * Depth: 8.77 inches
 * Weight: 3.17 pounds
-
-[![](/assets/images/posts/thinkpad-13-top.png){: .bordered }](/assets/images/posts/thinkpad-13-top.png)
 
 [![](/assets/images/posts/thinkpad-13-bottom.png){: .bordered }](/assets/images/posts/thinkpad-13-bottom.png)
 
@@ -105,27 +105,27 @@ The Macbook was perfect in this regard, in that it was extremely thin and light.
 
 I really love the classic Thinkpad keyboard on the T61 and X220. Moving to the "butterfly" keys on the Macbook was quite a shock. Personally, I find the keyboard on the Macbook absolutely horrendous. It feels like each keystroke is a mini mouse click.
 
+[![](/assets/images/posts/thinkpad-13-keyboard-vs-macbook.png){: .bordered }](/assets/images/posts/thinkpad-13-keyboard-vs-macbook.png)
+
 The Thinkpad 13 keyboard is a breath of fresh air compared to the Macbook, but isn't quite as comfortable as the X220 keyboard. I wasn't too fond of Lenovo going the route of the chiclet keys, but I actually don't mind it as much as I thought I would. In fact, I barely notice the difference in travel between the Thinkpad 13 and X220.
 
 [![](/assets/images/posts/thinkpad-13-keyboard-vs-x220.png){: .bordered }](/assets/images/posts/thinkpad-13-keyboard-vs-x220.png)
 
-[![](/assets/images/posts/thinkpad-13-keyboard-vs-macbook.png){: .bordered }](/assets/images/posts/thinkpad-13-keyboard-vs-macbook.png)
-
 There's a decent amount of resistance on the Thinkpad 13 keys, providing a good amount of feedback. However, I do occasionally find myself accidentally pushing keys while resting my hands on home row. It could just be my fat and lazy hands, but I don't have a problem resting on the X220 or Macbook keys.
 
-One thing I knew I'd be missing from my Macbook was the backlit keyboard. The X220 had a little LED light at the top of the display panel aimed at the keyboard. The Thinkpad 13 has no function, backlight or LED, for illuminating the keyboard. Now, I rarely use my Thinkpad 13 in dim or dark settings, but when I do, it's a minor inconvenience to hunt for keys in the dark.
+One thing I knew I'd be missing from my Macbook was the backlit keyboard. The X220 has a little LED light at the top of the display panel aimed at the keyboard. The Thinkpad 13 has no function, backlight or LED, for illuminating the keyboard. I rarely use my Thinkpad 13 in dim or dark settings, but when I do, it's a minor inconvenience to hunt for keys in the dark.
 
 # Trackpad and Trackpoint
-
-[![](/assets/images/posts/thinkpad-13-trackpad.png){: .bordered }](/assets/images/posts/thinkpad-13-trackpad.png)
 
 It's undeniable, the Macbook (and almost any Apple laptop) has the best trackpad in the industry. Nothing comes even remotely close! The trackpad on the X220 is terrible. It has a rough, bumpy finish on it, which does nothing but make it unpleasant to touch.
 
 The Thinkpad 13 trackpad functions about as well as any other laptop in its class. Compared to the X220, it is much larger and has a nice, smooth finish. It doesn't function or feel as good as the premium glass trackpad of the Macbook, but it's a huge improvement from the X220.
 
-[![](/assets/images/posts/thinkpad-13-trackpoint.png){: .bordered }](/assets/images/posts/thinkpad-13-trackpoint.png)
+[![](/assets/images/posts/thinkpad-13-trackpad.png){: .bordered }](/assets/images/posts/thinkpad-13-trackpad.png)
 
 While trackpads are nice, most Thinkpad owners find pleasure in using the [classic trackpoint](/2012/08/22/vim-users-and-nipple-mouse.html) or "nub" in the middle of the keyboard. Unsurprisingly, the trackpoint on the Thinkpad 13 delivers a precise point-and-click experience. The buttons are much more clicky than the buttons on the X220, but that may be due to wear-and-tear. Only time will tell whether the Thinkpad 13's trackpoint buttons will continue to provide the feedback they currently do.
+
+[![](/assets/images/posts/thinkpad-13-trackpoint.png){: .bordered }](/assets/images/posts/thinkpad-13-trackpoint.png)
 
 # Display
 
@@ -133,7 +133,7 @@ The IPS LED "Retina" display on the Macbook is pretty much the cream of the crop
 
 [![](/assets/images/posts/thinkpad-13-display-colors.png){: .bordered }](/assets/images/posts/thinkpad-13-display-colors.png)
 
-The 1440 x 900 resolution on the Macbook was a definite upgrade from the meager 1366 x 768 on the X220, but the "FHD" 1920 x 1080 on the Thinkpad 13 is wonderful to work on! It's nice to be able to watch videos in full 1080p. Not to mention the number of lines of code I can fit in a single terminal session!
+The 1440 x 900 resolution on the Macbook is a definite upgrade from the meager 1366 x 768 on the X220, but the "FHD" 1920 x 1080 on the Thinkpad 13 is wonderful to work on! It's nice to be able to watch videos in full 1080p. It also gives me plenty of vertical space to fit as much text on the screen as possible.
 
 [![](/assets/images/posts/thinkpad-13-display-lines.png){: .bordered }](/assets/images/posts/thinkpad-13-display-lines.png)
 
