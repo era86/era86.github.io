@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Remapping CapsLock to Escape in Ubuntu 16.04"
-date:   2017-01-05
+date:   2017-01-14
 comments: true
 ---
 
