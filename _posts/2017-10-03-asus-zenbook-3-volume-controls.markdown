@@ -5,11 +5,11 @@ date:   2017-10-03
 comments: true
 ---
 
-[![](/assets/images/posts/){: .bordered.landing-image.centered }](/assets/images/posts/)
+[![Asus Speaker](/assets/images/posts/asus-speaker.jpg){: .bordered.landing-image.centered }](/assets/images/posts/asus-speaker.jpg)
 
 I recently purchased an [Asus ZenBook 3](https://www.asus.com/us/Laptops/ASUS-ZenBook-3-UX390UA) to replace my aging Thinkpad X220. Most things work right out of the box just fine, but I noticed the audio function controls having no affect on the *actual* volume of the laptop.
 
-[![](/assets/images/posts/){: .bordered }](/assets/images/posts/)
+[![Volume Controls](/assets/images/posts/volume-controls.png){: .bordered }](/assets/images/posts/volume-controls.png)
 
 After a bit of Googling, I came upon an old [Ubuntu Forums post](https://ubuntuforums.org/showthread.php?t=2340639&page=2) with a solution to my problem. Credit goes to a user named **hanni_ali**.
 
