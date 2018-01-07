@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Influential Qualities of my Favorite Teammates"
-date:   2018-01-08
+date:   2018-01-22
 comments: true
 ---
 
