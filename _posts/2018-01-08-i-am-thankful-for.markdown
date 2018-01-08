@@ -11,11 +11,11 @@ The beginning of a new year is a great time to look back and reflect on everythi
 
 [<img style="height: 250px; border: solid 1px #CCC;" align="left" src="/assets/images/posts/vagrant.png">](https://www.vagrantup.com/)
 
-Setting up a local machine is easy enough to do for any web developer. You install stack dependencies, an IDE or text-editor, and a web browser. Voila! You're ready to work. Then, someone else joins your team or you get a brand new computer. Suddenly, you have to spend time re-installing everything from memory or from outdated documentation.
+Setting up a local machine is easy to do for most of us. You install stack dependencies, an IDE or text-editor, and a web browser. Voila! You're ready to work. Then, someone else joins your team or you get a brand new computer. Suddenly, you have to spend time re-installing everything from memory or from outdated documentation.
 
 [Vagrant](https://www.vagrantup.com/) can help speed up this process. It uses virtualization to create and set up virtual machines for any type of development environment. The configuration instructions for provisioning a new machine is stored in a `Vagrantfile`. The `Vagrantfile` can be stored or shared with other developers to create identical development environments on any computer with Vagrant installed. 
 
-This makes it easy to create self-containted development environments and replicate on other computers with ease!
+This makes it easy to create self-containted development environments and replicate them on other computers with ease!
 
 ## Jenkins
 
