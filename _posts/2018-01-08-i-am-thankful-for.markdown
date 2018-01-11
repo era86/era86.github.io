@@ -37,7 +37,7 @@ If you know how to push commits to [Github](https://github.com/), you know how t
 
 Admittedly, I've never had to scale any of my projects, but for me, Heroku provides _just_ enough for my needs!
 
-# Conclusion
+## Conclusion
 
 Many, many thanks to the creators and maintainers of these tools! Without them, my life as a web developer would be more difficult.
 
