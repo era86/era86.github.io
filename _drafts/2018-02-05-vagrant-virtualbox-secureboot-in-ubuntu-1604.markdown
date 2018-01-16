@@ -59,23 +59,17 @@ At this point, we have a key-pair shared between the UEFI firmware and the clien
 
 ## Reboot and Enroll the new Machine Owner Key
 
-Reboot the machine. Upon reboot, a MOK management utility will automatically start. This will look a bit different on each firmware vendor, but mostly the same.
+Reboot the machine. Upon reboot, a MOK management utility will automatically start. This will look a bit different on each firmware vendor, but mostly the same. It should look something like this:
 
-Choose "Enroll MOK":
+[![MOK Management](/assets/images/posts/mok-management.png){: .bordered }](/assets/images/posts/mok-management.png)
 
-[![MOK Utility 1](/assets/images/posts/mok-util-1.png){: .bordered }](/assets/images/posts/mok-util-1.png)
+The interface is pretty straightforward, follow the steps:
 
-Continue and confirm enrollment:
+* Choose "Enroll MOK"
+* Continue and confirm enrollment
+* Enter the password used when registering the new keys with `mokutil`
 
-[![MOK Utility 2](/assets/images/posts/mok-util-2.png){: .bordered }](/assets/images/posts/mok-util-2.png)
-
-[![MOK Utility 3](/assets/images/posts/mok-util-3.png){: .bordered }](/assets/images/posts/mok-util-3.png)
-
-Enter the password used when registering the new keys with `mokutil`:
-
-[![MOK Utility 4](/assets/images/posts/mok-util-4.png){: .bordered }](/assets/images/posts/mok-util-4.png)
-
-Finally, reboot the machine.
+At last, reboot the machine.
 
 ## Log in and load the VirtualBox modules
 
