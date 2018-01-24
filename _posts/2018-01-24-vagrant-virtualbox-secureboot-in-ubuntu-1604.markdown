@@ -1,15 +1,17 @@
 ---
 layout: post
 title:  "Vagrant and VirtualBox with Secure Boot in Ubuntu 16.04"
-date:   2018-02-05
+date:   2018-01-24
 comments: true
 ---
+
+[![Secure Computer](/assets/images/posts/secure-computer.png){: .landing-image.centered }](/assets/images/posts/secure-computer.png)
 
 To dual-boot Windows 10 and Ubuntu 16.04 side-by-side, [Secure Boot](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot) must remain enabled. Unfortunately, this clashes with [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) in Ubuntu.
 
 A symptom of the issue is the following error when attempting `vagrant up`:
 
-{% highlight bash %}
+{% highlight console %}
 The provider 'virtualbox' that was requested to back the machine
 'default' is reporting that it isn't usable on this system. The
 reason is shown below:
