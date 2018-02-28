@@ -31,7 +31,7 @@ Learning something new can be uncomfortable, but some of the best developers I'v
 
 ## Patient and Empathetic
 
-Everybody makes mistakes, junior and senior employees alike. In my experience, overall team growth depends heavily on how mistakes are handled. I've worked in places where broken builds yielded public humiliation on team-chat. I'm sure we've all witnessed interviews where it seemed like the goal was to make the candidate sweat rather then guage his/her ability to solve problems. In my humble opinion, negative reinforcement stifles communication, prevents risk-taking, and suppresses new ideas.
+Everybody makes mistakes, junior and senior employees alike. In my experience, overall team growth depends heavily on how mistakes are handled. I've worked in places where broken builds yielded public humiliation on team-chat. I'm sure we've all witnessed interviews where it seemed like the goal was to make the candidate sweat rather then gauge his/her ability to solve problems. In my humble opinion, negative reinforcement stifles communication, prevents risk-taking, and suppresses new ideas.
 
 Patience goes a long way when working with other engineers, especially those with less experience. Looking back, I'm extremely grateful for those who were patient with my "noobishness". **They made me feel more empowered to ask questions, take criticism, and improve**. I only hope to exhibit the same type of empathy towards anyone I work with.
 
