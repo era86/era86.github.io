@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "The Influential Qualities of my Favorite Teammates"
-date:   2018-01-22
+date:   2018-02-28
 comments: true
 ---
+
+[![Coworkers](/assets/images/posts/coworkers.png){: .bordered.landing-image.centered }](/assets/images/posts/coworkers.png)
 
 Since about 2009, I've had the pleasure of working on several different engineering teams. Each one came with its own set of tools and methodologies, all contributing to my growth as a developer. Sure, I learned lots of "OOPs" and "TDDs" along the way. However, a lot of my growth was influenced by the characteristics of those around me.
 
