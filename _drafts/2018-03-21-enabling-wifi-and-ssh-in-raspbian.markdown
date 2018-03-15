@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Enabling WiFi and SSH in Raspbian Lite via Ubuntu"
+title: "Enabling WiFi and SSH on a Raspberry Pi in Ubuntu 16.04"
 date: 2018-03-21
 comments: true
 ---
