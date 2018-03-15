@@ -43,7 +43,7 @@ The official [Raspberry Pi docs](https://www.raspberrypi.org/documentation/insta
 
 ### Enable WiFi and SSH in Raspbian
 
-In order to download and install third-party tools on the Raspberry Pi, it needs to be connected to the internet. Raspbian can be configured to automatically connect to a wireless network when it boots.
+In order to download and install third-party tools on the Raspberry Pi, it needs to be connected to the internet. Raspbian can be set up to automatically connect to a wireless network when it boots.
 
 It isn't necessary, but I wanted to do programming and configuration on Raspberry Pi from my laptop. So, I took the extra time to enable SSH in Raspbian.
 
@@ -51,7 +51,7 @@ I wrote the instructions on enabling WiFi and SSH in Raspbian in [another blog p
 
 ### Boot the SD Card
 
-Once Raspbian is installed and configured to connect to the internet, the Raspberry Pi is ready to record video! Just put the SD card into the slot and boot it up.
+Once Raspbian is installed and set up to connect to the internet, the Raspberry Pi is ready to record video! Just put the SD card into the slot and boot it up.
 
 ### Install `ffmpeg` in Raspbian
 
@@ -62,7 +62,11 @@ It can be installed with:
 sudo apt-get install ffmpeg
 {% endhighlight %}
 
-### Create Python Script to Record Video
+## Programming the Pi to Record Video
+
+With Raspbian Lite and `ffmpeg` installed, the Pi is ready to be configured to _actually_ record some video.
+
+### Create Python Script to Execute `ffmpeg`
 
 The following script operates the basic video-recording functionality. In summary, the script will:
 
@@ -146,7 +150,7 @@ if free_bytes_percentage < PERCENTAGE_THRESHOLD:
 
 ### Make Raspbian Auto-Run Scripts on Boot
 
-Assuming the scripts are saved in `/home/pi` (the default user and home directory), Raspbian can be configured to run them on boot by adding commands to `/etc/rc.local`:
+Assuming the scripts are saved in `/home/pi` (the default user and home directory), Raspbian can run them on startup by adding commands to `/etc/rc.local`:
 
 {% highlight bash %}
 python /home/pi/purge_old_recordings.py
