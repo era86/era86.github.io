@@ -15,7 +15,7 @@ One of the most popular operating systems for the Raspberry Pi is [Raspbian](htt
 
 Ubuntu automatically mounts the `boot` and `rootfs` partitions when the micro-SD card is plugged into the computer.
 
-[![Pi Partitions Ubuntu](/assets/images/posts/pi-partitions-ubuntu.png){: .bordered }](/assets/images/posts/pi-partitions-ubuntu.png)
+[![Pi Partitions Ubuntu](/assets/images/posts/pi-partition-ubuntu.png){: .bordered }](/assets/images/posts/pi-partition-ubuntu.png)
 
 If not, they can be mounted manually on the command line.
 
