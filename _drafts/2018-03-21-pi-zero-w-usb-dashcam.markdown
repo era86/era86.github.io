@@ -5,61 +5,70 @@ date: 2018-03-21
 comments: true
 ---
 
-[![](/assets/images/posts/){: .bordered.landing-image.centered }](/assets/images/posts/)
+[![Raspberry Pi Dashcam](/assets/images/posts/dashcam-landing.png){: .bordered.landing-image.centered }](/assets/images/posts/dashcam-landing.png)
 
-About a year ago, I bought myself a Raspberry Pi Zero W to play with. Recently, I finally had some time to work on it! I could have done any of the millions of projects out there, but I chose to do something really simple, but useful: a Raspberry Pi dashcam.
-
-It's really just a Raspberry Pi video recorder that starts recording on boot. It can be used anywhere, not just on the dash of a car.
+About a year ago, I bought a [Raspberry Pi Zero W](https://www.raspberrypi.org/products/raspberry-pi-zero-w/) to do some tinkering. It took awhile, but I finally found some time to play around with it! There are many fun [Raspberry Pi projects](https://www.hackster.io/raspberry-pi/projects) out there, but I chose to do something I really needed: a Raspberry Pi dashcam.
 
 ## The Hardware
 
-There are three main components of the dashcam: the Pi, the camera, and the SD card.
+There are three main components of my dashcam: the Pi, the camera, and the SD card.
 
 ### Raspberry Pi Zero W
 
-I wanted a device I could easily hide anywhere in my Jeep. Really, any Raspberry Pi would have worked in this situation, they're all pretty small. If I were to do this project again, I'd use a standard Pi 3 instead of the Pi Zero. This is because the Pi Zero only has mini-USB ports. So, I had to buy an adapter for the webcam.
+[![Raspberry Pi Zero W](/assets/images/posts/pi-zero-w.png){: .bordered }](/assets/images/posts/pi-zero-w.png)
+
+All of the Raspberry Pi models are small, lightweight, and easy to mount anywhere. I chose the Pi Zero W because of its minimal, thin design. However, if I had to do it all again, I'd use a [Pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/). The Pi Zero W only has mini-USB ports. So, I had to buy adapters for any of my USB peripherals.
 
 ### AUSDOM USB Webcam
 
-The camera I went with was the cheapest, four-star rated USB webcam on Amazon. Nothing special. I chose this over the standard Raspberry Pi camera because I didn't want to deal with routing a ribbon cable in the Jeep.
+[![AUSDOM Webcam](/assets/images/posts/dashcam-webcam.png){: .bordered }](/assets/images/posts/dashcam-webcam.png)
+
+I quickly scoured Amazon for the cheapest, four-star rated USB webcam and settled on the [AUSDOM 1080P Webcam](https://www.amazon.com/gp/product/B01M642ZTC). It's a standard USB webcam, nothing special. I didn't want to deal with routing a ribbon cable throughout the Jeep, so I decided against the standard [Raspberry Pi Camera Module](https://www.raspberrypi.org/products/camera-module-v2/).
 
 ### Samsung 64GB Micro-SD Card
 
-Video clip segments can take up a lot of space. I planned to use an external harddrive to store them, but the Pi Zero only has one mini-USB port for peripherals (the other is for power). So, I decided to store clips directly on an SD card and handle the space issue with some Python scripting.
+[![Samsung SD Card](/assets/images/posts/samsung-sd-card.png){: .bordered }](/assets/images/posts/samsung-sd-card.png)
 
-## Install Raspbian OS on the SD Card
+Video clips take up a lot of space. I planned to use an external harddrive to store recordings, but the Pi Zero W only has one mini-USB port for peripherals (the other is for power). So, I decided to store clips directly on an SD card. 64 GB is still quite limited, so I handle any space issues with Python scripts.
 
-A Raspberry Pi is just a miniature computer. So, I could have used any light-weight Linux operating system on it. A dashcam is a headless device (no GUI), so I opted for a terminal-only version of Raspbian.
+## Prepping the Operating System
 
-I followed the official [Raspberry Pi docs](https://www.raspberrypi.org/documentation/installation/installing-images/) to install Raspbian on my SD card with Etcher in Ubuntu. It's very straightforward.
+I started the process of building the dashcam by getting the operating system ready for configuration.
 
-## Enable WiFi and SSH in Raspbian
+### Install Raspbian OS on the SD Card
 
-We need to be able to be able access the internet from Raspbian to install third-party tools. It's also very convenient to do Python scripting on the Pi from another computer via SSH. If you'd rather use an external monitor and USB keyboard to operate directly on the device, feel free to skip the SSH part.
+A Raspberry Pi is basically a miniature computer. So, any light-weight operating system would work just fine on it. Since a dashcam is a headless device (no GUI), I opted for a terminal-only version of Raspbian named Raspbian Lite.
 
-I wrote the instructions on enabling WiFi and SSH in Raspbian in [another post]().
+The official [Raspberry Pi docs](https://www.raspberrypi.org/documentation/installation/installing-images/) do a great job explaining how to install Raspbian Lite on an SD card using a program named [Etcher](https://etcher.io/).
 
-## Boot the SD Card
+### Enable WiFi and SSH in Raspbian
 
-Once everything is set up, we're ready to boot into our Pi and make it record video!
+In order to download and install third-party tools on the Raspberry Pi, it needs to be connected to the internet. Raspbian can be configured to automatically connect to a wireless network when it boots.
 
-## SSH into Raspbian and Install `ffmpeg`
+It isn't necessary, but I wanted to do programming and configuration on Raspberry Pi from my laptop. So, I took the extra time to enable SSH in Raspbian.
 
-`ffmpeg` is a commandline utility for converting and streaming video. Since we're running a headless version of Raspbian, we can use `ffmpeg` in our Python scripts to record clips from the USB webcam and save them to the SD card.
+I wrote the instructions on enabling WiFi and SSH in Raspbian in [another blog post]().
 
-We can install it by doing:
+### Boot the SD Card
 
+Once Raspbian is installed and configured to connect to the internet, the Raspberry Pi is ready to record video! Just put the SD card into the slot and boot it up.
+
+### Install `ffmpeg` in Raspbian
+
+`ffmpeg` is a command-line utility for converting and streaming video. Since Raspbian Lite is terminal-only, `ffmpeg` is the best tool for reading video data from the webcam and saving it to the SD card.
+
+It can be installed with:
 {% highlight bash %}
 sudo apt-get install ffmpeg
 {% endhighlight %}
 
-## Create Python Script to Record Video
+### Create Python Script to Record Video
 
-The following script operates basic video-recording functionality. To briefly summarize, the script will:
+The following script operates the basic video-recording functionality. In summary, the script will:
 
-1. Create a folder for our recordings, if it doesn't already exist.
-2. Create a folder based on the current time. The current recording will be written here.
-3. Call `ffmpeg` from the commandline to begin saving segments of video from the webcam into the new folder.
+1. Create a folder for recordings, unless it already exists.
+2. Create a new folder based on the current time to save video clips.
+3. Call `ffmpeg` from the command-line to take segments of video from the webcam into the new folder.
 
 `record.py`:
 {% highlight python %}
@@ -89,24 +98,20 @@ subprocess.call(command, shell=True)
 {% endhighlight %}
 
 
-`ffmpeg` can get really complicated, really fast. I'd take a look at the [documentation](https://www.ffmpeg.org/ffmpeg.html) for a deeper dive into the command, but I'll break it down a bit:
+For a deeper explanation of `ffmpeg`, refer to the [official documentation](https://www.ffmpeg.org/ffmpeg.html). Here's a brief summary of the arguments used in the Python script:
 
 * `-i /dev/video0`: The input USB camera device. This may differ depending on the operating system or number of USB periphals attached.
-
 * `-c:v copy`: Copy the video stream directly from the input device to the output path.
-
 * `-an -sn -dn`: Omit audio, subtitles, and data.
-
 * `-segment_time 30 -f segment %03d.avi`: Break video clips into 30-second segments.
 
-## Create Python Script to Cleanup Old Recordings
+### Create Python Script to Clean Up Old Recordings
 
-Since drive space isn't infinite, we need to replace older recordings with newer ones (if necessary). The following script will do the cleanup _prior_ to recording:
+Drive space on an SD card is very limited. One solution is to replace older recordings with newer ones. The following script clears old videos, but only if more space is needed:
 
 1. Determine how much space is left on the device.
-2. If there is less than 25% of space left on the device, we need to do some cleanup.
-3. Get all the folders for all the recordings.
-4. Find the oldest folder and delete it.
+2. If there is less than 25% of space left, we need to do some cleanup.
+4. Find the oldest folder of video clips and delete it.
 
 `purge_old_recordings.py`:
 {% highlight python %}
@@ -139,18 +144,31 @@ if free_bytes_percentage < PERCENTAGE_THRESHOLD:
     shutil.rmtree(recordings[0][0])
 {% endhighlight %}
 
-## Make Raspbian Auto-Run Scripts on Boot
+### Make Raspbian Auto-Run Scripts on Boot
 
-Assuming our scripts are saved in `/home/pi` (the default user and home directory), we can make Raspbian run them on boot. We do this by adding them to `/etc/rc.local`:
+Assuming the scripts are saved in `/home/pi` (the default user and home directory), Raspbian can be configured to run them on boot by adding commands to `/etc/rc.local`:
 
 {% highlight bash %}
 python /home/pi/purge_old_recordings.py
 python /home/pi/record.py &
 {% endhighlight %}
 
-Be sure to add these lines _before_ the `exit 0`.
+These lines go right before the `exit 0`.
 
 Now, when the Pi gets power, it will boot up Raspbian and automatically start recording video clips from the webcam by running our Python scripts.
 
-{% highlight python %}
-{% endhighlight %}
+## Mounting and Wiring
+
+I mounted the Raspberry Pi on the passenger side of the center console.
+
+[![Mounted Pi](/assets/images/posts/mounted-pi.png){: .bordered }](/assets/images/posts/mounted-pi.png)
+
+It's close to the cigarette-lighter USB power adapter and in an easy place to route the wire for the webcam up to the dash.
+
+[![Pi and Cam](/assets/images/posts/pi-and-cam.png){: .bordered }](/assets/images/posts/pi-and-cam.png)
+
+It's a little rough-looking, but it works just fine!
+
+## Conclusion
+
+It isn't the most sophisticated Raspberry Pi project, but making a dashcam was a great opportunity to _finally_ tinker with my Pi Zero W! I'm open to suggestions for any improvements I can make. Feel free to leave it in the comments!
