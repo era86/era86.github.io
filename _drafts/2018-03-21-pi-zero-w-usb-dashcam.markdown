@@ -55,7 +55,7 @@ Once Raspbian is installed and set up to connect to the internet, the Raspberry 
 
 ### Install `ffmpeg` in Raspbian
 
-`ffmpeg` is a command-line utility for converting and streaming video. Since Raspbian Lite is terminal-only, `ffmpeg` is the best tool for reading video data from the webcam and saving it to the SD card.
+[`ffmpeg`](https://www.ffmpeg.org/) is a command-line utility for converting and streaming video. Since Raspbian Lite is terminal-only, `ffmpeg` is the best tool for reading video data from the webcam and saving it to the SD card.
 
 It can be installed with:
 {% highlight bash %}
@@ -104,8 +104,8 @@ subprocess.call(command, shell=True)
 
 For a deeper explanation of `ffmpeg`, refer to the [official documentation](https://www.ffmpeg.org/ffmpeg.html). Here's a brief summary of the arguments used in the Python script:
 
-* `-i /dev/video0`: The input USB camera device. This may differ depending on the operating system or number of USB periphals attached.
-* `-c:v copy`: Copy the video stream directly from the input device to the output path.
+* `-i /dev/video0`: Read input from the USB camera device.
+* `-c:v copy`: Copy the video stream directly from the input device to the output file.
 * `-an -sn -dn`: Omit audio, subtitles, and data.
 * `-segment_time 30 -f segment %03d.avi`: Break video clips into 30-second segments.
 
@@ -171,8 +171,12 @@ It's close to the cigarette-lighter USB power adapter and in an easy place to ro
 
 [![Pi and Cam](/assets/images/posts/pi-and-cam.png){: .bordered }](/assets/images/posts/pi-and-cam.png)
 
-It's a little rough-looking, but it works just fine!
+It's a little rough-looking, but it works just fine. The footage is decent quality as well, capturing frames at a steady rate.
+
+[![Dashcam Footage](/assets/images/posts/dashcam-footage.gif){: .bordered }](/assets/images/posts/dashcam-footage.gif)
 
 ## Conclusion
 
-It isn't the most sophisticated Raspberry Pi project, but making a dashcam was a great opportunity to _finally_ tinker with my Pi Zero W! I'm open to suggestions for any improvements I can make. Feel free to leave it in the comments!
+It isn't the most sophisticated Raspberry Pi project, but making a dashcam was a great opportunity to _finally_ tinker with my Pi Zero W!
+
+I'm open to suggestions for any improvements I can make. Feel free to leave it in the comments!
