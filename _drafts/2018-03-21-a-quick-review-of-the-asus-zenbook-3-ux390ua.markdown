@@ -62,8 +62,7 @@ Most of my laptop-usage happens on my couch. Occasionally, I'll throw my compute
 
 I recently took my ZenBook 3 on a two-week trip to the Philippines and it was the perfect companion! It actually came with a nice, light-weight case to protect it.
 
-**Asus ZenBook 3 Dimensions**
-
+**ZenBook 3 Dimensions**
 
 * Height: 0.46 inches
 * Width: 11.65 inches
@@ -87,65 +86,53 @@ I recently took my ZenBook 3 on a two-week trip to the Philippines and it was th
 
 [![](/assets/images/posts/asus-vs-macbook-open.png){: .bordered }](/assets/images/posts/asus-vs-macbook-open.png)
 
-**Macbook Pro 15" (2015) Dimensions**
-
-* Height: 0.71 inches
-* Width: 14.13 inches
-* Depth: 9.73 inches
-* Weight: 4.49 pounds
-
-[![](/assets/images/posts/asus-vs-mbp-top.png){: .bordered }](/assets/images/posts/asus-vs-mbp-top.png)
-
-[![](/assets/images/posts/asus-vs-mbp-side.png){: .bordered }](/assets/images/posts/asus-vs-mbp-side.png)
-
-[![](/assets/images/posts/asus-vs-mbp-open.png){: .bordered }](/assets/images/posts/asus-vs-mbp-open.png)
-
 # Keyboard
-
-[![](/assets/images/posts/asus-keyboard.png){: .bordered }](/assets/images/posts/asus-keyboard.png)
 
 The ZenBook 3 has a low-profile, illuminated chiclet keyboard. While it isn't anywhere near as comfortable as the Thinkpad 13 (or any Thinkpad for that matter), it isn't as horrendous as the "butterfly" keys on the MacBook.
 
-[![](/assets/images/posts/asus-keyboard-vs-x220.png){: .bordered }](/assets/images/posts/asus-keyboard-vs-x220.png)
+[![](/assets/images/posts/asus-keyboard-vs-macbook.png){: .bordered }](/assets/images/posts/asus-keyboard-vs-macbook.png)
 
-I did, however, find that without a hard enough key-press, the Asus wouldn't register certain keys. This turned out to be very annoying, since it forced me to "bottom out" quite hard on each key, which kind of defeats the purpose of a low-profile keyboard. The layout on the ZenBook 3 has the `Ctrl` key in the far, bottom-left corner. This means, compared to any Thinkpad or Apple laptop, the `Fn` and `Ctrl` keys are swapped. It's subtle, but the difference in layout made for a cognitive annoyance when switching laptops.
+However, I found that without a hard enough key-press, the Asus wouldn't always register. This turned out to be pretty annoying, since it forced me to "bottom out" on each key, which defeats the purpose of a low-profile keyboard.
 
-# Trackpad
+[![](/assets/images/posts/asus-keyboard.png){: .bordered }](/assets/images/posts/asus-keyboard.png)
 
-The trackpad on the ZenBook 3 has a good amount of real-estate kj
+I also noticed that the layout on the ZenBook 3 has the `Ctrl` key in the far, bottom-left corner. This means, compared to any Thinkpad or Apple laptop, the `Fn` and `Ctrl` keys are swapped. It's subtle, but the difference in layout was a minor inconvenience when switching laptops.
 
-[![](/assets/images/posts/asus-trackpad.png){: .bordered }](/assets/images/posts/asus-trackpad.png)
+[![](/assets/images/posts/asus-keyboard-layout.png){: .bordered }](/assets/images/posts/asus-keyboard-layout.png)
+
+# Touchpad
+
+The touchpad on the ZenBook 3 is very smooth and has a decent amount of real-estate. It's definitely one of the better ones out there, but doesn't compare to any of the Apple touchpads.
+
+[![](/assets/images/posts/asus-touchpad.png){: .bordered }](/assets/images/posts/asus-touchpad.png)
+
+It requires a good amount of pressure for push-to-click to register, which ends up shaking the whole laptop when it's on my lap. The tap-to-click functionality isn't perfect either, since tapping on the touchpad causes the pointer to jump around.
+
+[![](/assets/images/posts/asus-touchpad-finger.png){: .bordered }](/assets/images/posts/asus-touchpad-finger.png)
+
+There is a visual separator on the bottom of the touchpad to distinguish between left and right clicks, but it isn't super accurate. In fact, I find myself clicking on the far left or right corner just to get it to do what I want.
+
+[![](/assets/images/posts/asus-touchpad-separator.png){: .bordered }](/assets/images/posts/asus-touchpad-separator.png)
+
+For some strange reason, Asus decided to put the fingerprint reader directly on the top-right corner of the touchpad. Seems like a poor design-choice.
 
 [![](/assets/images/posts/asus-fingerprint-reader.png){: .bordered }](/assets/images/posts/asus-fingerprint-reader.png)
 
 # Display
 
-The IPS LED "Retina" display on the Macbook is pretty much the cream of the crop when it comes to laptop display technology. While its pixel-dense sharpness is really nice to have, I always try to fit as many lines of text on the screen as possible. Yes, I know this ends up with some really small text, but I value screen real-estate a bit more than other people might.
+The ZenBook 3 boasts a bright and vibrant high-resolution IPS display. It also has a very unintrusive, slim bezel.
 
 [![](/assets/images/posts/asus-display-colors.png){: .bordered }](/assets/images/posts/asus-display-colors.png)
 
-The 1440 x 900 resolution on the Macbook is a definite upgrade from the meager 1366 x 768 on the X220, but the "FHD" 1920 x 1080 on the Thinkpad 13 is wonderful to work on! It's nice to be able to watch videos in full 1080p. It also gives me plenty of vertical space to fit as much text on the screen as possible.
+The "FHD" 1920 x 1080 on the ZenBook 3 is a welcome change from the 1440 x 900 resolution on the MacBook. It's nice to be able to watch HD videos in full 1080p.
 
 [![](/assets/images/posts/asus-display-lines.png){: .bordered }](/assets/images/posts/asus-display-lines.png)
 
-It's worth noting that I do see some lightbleed at the bottom of the screen right along the bottom bezel, just above the hinges. It's hardly noticeable with stuff on the screen, but when the screen is black, I can definitely see it.
+While higher resolutions are great for photo or video, I find myself increasing the font-size on my web-browser and terminal just to make it readable. Sure, I can fit more lines of code on my screen, but it's much harder to read. At this point, I think FHD is just a _tad_ bit too high on a 12-inch display.
 
 # Performance
 
-As I mentioned above, one of the real issues I have with my Macbook and X220 is having enough power to multitask. At any given moment, I have the following applications up and running:
-
-* Chrome with many tabs open
-* an Ubuntu virtual machine running Jekyll or Rails
-* several terminal sessions
-* Spotify on "High Quality" mode
-
-Rarely is CPU ever really an issue in this particular situation, but the Intel Core M CPU in the Macbook is obviously a bottleneck. Even with 8 GB of RAM, OS X comes to a slow crawl with all these applications running. In fairness, I don't think the Macbook was never really designed to handle this much work.
-
-The X220, with its Intel Core i5-2520M CPU fairs a bit better, but it's pushed to 100% full load. This makes the laptop run extremely hot. It also only has 4 GB of RAM, which isn't much.
-
-The Thinkpad 13 can be configured on the Lenovo website up to 16 GB of memory, but the Intel Core i5-6300U supports a maximum of 32 GB! I figured, why not just max out the memory? I ended up purchasing and installing the [Crucial Ballistix Sport LT 32GB Kit](https://www.amazon.com/gp/product/B01DGOF3E4/ref=oh_aui_detailpage_o03_s00). I found [Crucial's Upgrade Compatibility page](http://www.crucial.com/usa/en/compatible-upgrade-for/Lenovo/thinkpad-13) useful for finding this particular kit.
-
-So, as I type this blog post in Vim, I'm listening to Spotify, browsing several Chrome tabs, and running a Vagrant VM serving Jekyll. All without a single hiccup or stutter!
+So, as 
 
 # Battery Life
 
