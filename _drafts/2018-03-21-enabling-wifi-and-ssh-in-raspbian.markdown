@@ -17,31 +17,7 @@ Ubuntu automatically mounts the `boot` and `rootfs` partitions when the micro-SD
 
 [![Pi Partitions Ubuntu](/assets/images/posts/pi-partition-ubuntu.png){: .bordered }](/assets/images/posts/pi-partition-ubuntu.png)
 
-If not, they can be mounted manually on the command line.
-
-First, we need to find the device to mount:
-{% highlight bash %}
-sudo fdisk -l
-{% endhighlight %}
-
-In the output, we should see our SD card:
-{% highlight bash %}
-Disk /dev/sdb: 59.6 GiB, 64021856256 bytes, 125042688 sectors
-...
-
-Device     Boot Start       End   Sectors  Size Id Type
-/dev/sdb1        8192     93236     85045 41.5M  c W95 FAT32 (LBA)
-/dev/sdb2       94208 125042687 124948480 59.6G 83 Linux
-{% endhighlight %}
-
-Now, we use the `mount` command to mount the partitions:
-{% highlight bash %}
-sudo mkdir /media/boot
-sudo mount /dev/sdb1 /media/boot
-
-sudo mkdir /media/rootfs
-sudo mount /dev/sdb2 /media/rootfs
-{% endhighlight %}
+If not, they can be mounted manually on the command line. [This guide from Techwalla](https://www.techwalla.com/articles/how-to-mount-an-sd-card-in-linux) describes how to use `mount` to read an SD card in Linux.
 
 ## Automatically connect to a WiFi Network
 
@@ -66,22 +42,26 @@ sudo touch /media/boot/ssh
 
 With the file in the right place, Raspbian wll enable SSH on boot.
 
-## Booting the Raspberry Pi and SSH-ing In
+## Get the IP address of the Raspberry Pi
 
-If everything is configured properly, we can boot up the Raspberry Pi and SSH into the device with the default credentials:
+There are various ways to get the IP address of the Pi. If we wanted to, we could even [set up a static IP](https://raspberrypi.stackexchange.com/questions/37920/how-do-i-set-up-networking-wifi-static-ip-address/74428#74428) on the Pi.
 
-{% highlight bash %}
-# user: pi
-# password: raspberry
-
-ssh pi@192.x.x.1
-{% endhighlight %}
-
-The assigned IP address for the Raspberry Pi can be found in the DHCP client list for the router.
+However, the easiest method for me was to log into my router (ex. `http://192.168.0.1`) and find the DHCP client list:
 
 [![DHCP List](/assets/images/posts/dhcp-list.png){: .bordered }](/assets/images/posts/dhcp-list.png)
 
-Instructions for accessing the DHCP client list will vary with each router.
+There, I found the Pi Zero under `raspberrypi`, with its MAC address and IP assigned to it.
+
+## Booting the Raspberry Pi and SSH-ing In
+
+If everything is configured properly, we can boot up the Raspberry Pi and SSH into the device with the IP address and default credentials:
+
+* Username: "`pi`"
+* Password: "`raspberry`"
+
+{% highlight bash %}
+ssh pi@192.x.x.109
+{% endhighlight %}
 
 ## Conclusion
 
