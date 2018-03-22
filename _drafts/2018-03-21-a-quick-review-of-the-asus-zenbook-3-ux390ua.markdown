@@ -5,42 +5,42 @@ date:   2018-03-21
 comments: true
 ---
 
-[![](/assets/images/posts/){: .bordered.centered }](/assets/images/posts/)
+[![Asus Zenbook 3](/assets/images/posts/asus-zenbook-main.png){: .bordered.centered }](/assets/images/posts/asus-zenbook-main.png)
 
-In 2016, I purchased a [Thinkpad 13]() to replace my MacBook. Unfortunately, I ran into issues with battery life and its suspend functionality in Ubuntu. I also found the Thinkpad 13 chassis quite flimsy, flexible, and outright "cheap". This made it really hard for travel, since I needed to be able to pack it tightly into my backpack while on the road. I simply didn't trust the chassis ability to withstand the punishment.
+In 2016, I purchased a [Thinkpad 13]() to replace my MacBook. After a couple weeks of use, I ran into issues with the Thinkpad's battery life and suspend functionality in Ubuntu. I also found its chassis a bit flimsy, flexible, and cheap-feeling. It was fine for home-use, but not for travel, since I tend to pack my laptops tightly into my backpack along with shoes, clothes, etc. I didn't trust the plastic chassis to withstand any of that punishment.
 
-Last September, I decided to move on from the Thinkpad 13. At the time, there were many laptops on the market that fit my requirements. After a couple weeks of shopping around, I eventually pulled the trigger on a [Asus ZenBook 3]().
+Last September, I decided to move on from the Thinkpad 13. There were many laptops I considered, most of which fit my requirements. After a couple weeks of research, I eventually pulled the trigger on an [Asus ZenBook 3]().
 
-[![](/assets/images/posts/){: .bordered }](/assets/images/posts/)
+[![Zenbook Box](/assets/images/posts/asus-zenbook-box.png){: .bordered }](/assets/images/posts/asus-zenbook-box.png)
 
-The ZenBook 3 has more than enough power to do some of the basic tasks I require: streaming video, writing code, running VMs, and playing Stardew Valley. It also features an extremely slim aluminum chassis (very similar to the MacBook), sturdy enough to withstand any type of flex forced upon it.
+The Asus ZenBook 3 has more than enough power to perform the basic tasks I require at home: streaming video, writing code, running VMs, and playing [Stardew Valley](). It also features an extremely slim, aluminum chassis (very similar to the MacBook), sturdy enough to withstand any road-warrior punishment forced upon it.
 
-It's been a couple of months, now. So, I decided to write a quick review of my thoughts on the laptop.
+It's been a couple of months, now. So, I decided to write a quick review of the laptop so far.
 
 # Helpful Reviews
 
-*Disclaimer:* This particular write-up isn't a comprehensive review of the Asus ZenBook 3. It's a quick summary of my thoughts and an opportunity to answer any questions folks may have.
+*Disclaimer:* This write-up isn't an in-depth review of the Asus ZenBook 3, it's a quick summary of my thoughts on the device.
 
-There are plenty of great, detailed reviews out there. These were particularly helpful in making my decision to buy one:
+There are plenty of great, comprehensive reviews out there. The following links helped me make my decision:
 
 * [Asus ZenBook 3 UX390UA Review by Mobile Tech Review](https://www.youtube.com/watch?v=qFnrrQCmg8k)
 * [Asus ZenBook 3 Review by Laptop Mag](https://www.laptopmag.com/reviews/laptops/asus-zenbook-3)
 * [Asus ZenBook 3 Review by Engadget](https://www.engadget.com/2016/10/05/asus-zenbook-3-review/)
 
-I highly recommend giving all of these a read/watch!
+I recommend giving all of these a read/watch!
 
 # My Configuration
 
-Here is what I need my daily driver laptop to be capable of: 
+Here is a list of some of the tasks my daily-driver laptop needs to be capable of:
 
 * Running one or two virtual machines via [Vagrant](https://www.vagrantup.com/) and [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 * Displaying a decent amount of code on the screen
 * Streaming HQ music or HD video without lagging the entire system
 * Playing simple games at low to medium settings
-* Being slim and sturdy enough to stuff in my backpack for traveling
-* Charge with a USB-C port (so I can charge my phone with the same charger)
+* Withstanding punishment in my backpack when traveling
+* Charging with a USB-C (Thunderbolt) charger (so I can share the charger with my phone)
 
-Based on my requirements, I opted for the lower Intel Core i5  model (UX390UA-DH51-GR):
+Based on my requirements, I opted for the Intel Core i5 model (UX390UA-DH51-GR):
 
 | Processor          | Intel Core i5-7200U KabyLake CPU
 | Operating System   | Ubuntu 16.04 (dual boot w/ Windows 10 Home 64)
@@ -54,13 +54,15 @@ Based on my requirements, I opted for the lower Intel Core i5  model (UX390UA-DH
 | Display Panel      | 12.5" (16:9) FHD (1920x1080) 60Hz Anti-Glare Panel 72% NTSC
 | Price              | $742.99
 
+Not a bad price for a more powerful, Windows 10 alternative to the 12-inch MacBook.
+
 # Size and Weight
 
 [![](/assets/images/posts/asus-top.png){: .bordered }](/assets/images/posts/asus-top.png)
 
-Most of my laptop-usage happens on my couch. Occasionally, I'll throw my computer in a bag and head to a coffee shop, but it's few and far-between. While I'm no road-warrior, I still need my laptop to be slim and sturdy enough to cram into my 40-liter REI backpack when I fly overseas.
+Most of my laptop-usage happens on my couch. Occasionally, I'll throw my computer in a bag and head to a coffee shop, but it's not a common occurrence. However, I still need my laptop to be slim and sturdy enough to cram into my 40-liter REI backpack when I fly somewhere, which I do plenty of.
 
-I recently took my ZenBook 3 on a two-week trip to the Philippines and it was the perfect companion! It actually came with a nice, light-weight case to protect it.
+I recently took my ZenBook 3 on a two-week trip to the Philippines and it was the perfect companion! It actually came with a nice, light-weight case for extra protection.
 
 **ZenBook 3 Dimensions**
 
@@ -86,27 +88,29 @@ I recently took my ZenBook 3 on a two-week trip to the Philippines and it was th
 
 [![](/assets/images/posts/asus-vs-macbook-open.png){: .bordered }](/assets/images/posts/asus-vs-macbook-open.png)
 
+It's very clear the ZenBook took much of its design influence from the MacBook.
+
 # Keyboard
 
 The ZenBook 3 has a low-profile, illuminated chiclet keyboard. While it isn't anywhere near as comfortable as the Thinkpad 13 (or any Thinkpad for that matter), it isn't as horrendous as the "butterfly" keys on the MacBook.
 
 [![](/assets/images/posts/asus-keyboard-vs-macbook.png){: .bordered }](/assets/images/posts/asus-keyboard-vs-macbook.png)
 
-However, I found that without a hard enough key-press, the Asus wouldn't always register. This turned out to be pretty annoying, since it forced me to "bottom out" on each key, which defeats the purpose of a low-profile keyboard.
+The keys don't offer much feedback. Also, without a hard enough key-press, the keys don't always register. This is pretty annoying, since it forces me to "bottom out" on each key, which defeats one of the main purposes of a low-profile keyboard.
 
 [![](/assets/images/posts/asus-keyboard.png){: .bordered }](/assets/images/posts/asus-keyboard.png)
 
-I also noticed that the layout on the ZenBook 3 has the `Ctrl` key in the far, bottom-left corner. This means, compared to any Thinkpad or Apple laptop, the `Fn` and `Ctrl` keys are swapped. It's subtle, but the difference in layout was a minor inconvenience when switching laptops.
+I also noticed that the layout on the ZenBook 3 has the `Ctrl` key in the far, bottom-left corner. Compared to any Thinkpad or Apple laptop, the `Fn` and `Ctrl` keys are actually _swapped_. It's subtle, but enough to be a cognitive inconvenience when switching laptops.
 
 [![](/assets/images/posts/asus-keyboard-layout.png){: .bordered }](/assets/images/posts/asus-keyboard-layout.png)
 
 # Touchpad
 
-The touchpad on the ZenBook 3 is very smooth and has a decent amount of real-estate. It's definitely one of the better ones out there, but doesn't compare to any of the Apple touchpads.
+The touchpad on the ZenBook 3 is comfortable and very smooth-to-touch. It isn't quite as large as the touchpad on the MacBook, but offers just enough room to be comfortable. It'd be hard to find a touchpad anywhere near as good as the ones in any Apple laptop.
 
 [![](/assets/images/posts/asus-touchpad.png){: .bordered }](/assets/images/posts/asus-touchpad.png)
 
-It requires a good amount of pressure for push-to-click to register, which ends up shaking the whole laptop when it's on my lap. The tap-to-click functionality isn't perfect either, since tapping on the touchpad causes the pointer to jump around.
+The push-to-click functionality requires an excessive amount of pressure to register, which can make the whole laptop shake when it's on my lap. The tap-to-click functionality isn't perfect either, since tapping on the touchpad causes the pointer to jump around.
 
 [![](/assets/images/posts/asus-touchpad-finger.png){: .bordered }](/assets/images/posts/asus-touchpad-finger.png)
 
@@ -114,7 +118,7 @@ There is a visual separator on the bottom of the touchpad to distinguish between
 
 [![](/assets/images/posts/asus-touchpad-separator.png){: .bordered }](/assets/images/posts/asus-touchpad-separator.png)
 
-For some strange reason, Asus decided to put the fingerprint reader directly on the top-right corner of the touchpad. Seems like a poor design-choice.
+For some strange reason, Asus put the fingerprint reader directly on the top-right corner of the touchpad. In my opinion, it's a poor use of touchpad real-estate.
 
 [![](/assets/images/posts/asus-fingerprint-reader.png){: .bordered }](/assets/images/posts/asus-fingerprint-reader.png)
 
@@ -126,23 +130,42 @@ The ZenBook 3 boasts a bright and vibrant high-resolution IPS display. It also h
 
 The "FHD" 1920 x 1080 on the ZenBook 3 is a welcome change from the 1440 x 900 resolution on the MacBook. It's nice to be able to watch HD videos in full 1080p.
 
-[![](/assets/images/posts/asus-display-lines.png){: .bordered }](/assets/images/posts/asus-display-lines.png)
+[![](/assets/images/posts/asus-display-video.png){: .bordered }](/assets/images/posts/asus-display-video.png)
 
-While higher resolutions are great for photo or video, I find myself increasing the font-size on my web-browser and terminal just to make it readable. Sure, I can fit more lines of code on my screen, but it's much harder to read. At this point, I think FHD is just a _tad_ bit too high on a 12-inch display.
+While higher resolutions are great for photo or video, I constantly have to increase the font-size just to make text readable. Sure, I can fit more lines of code on my screen, but it's _much_ harder to read. At this point, I think FHD is just a _tad_ bit too high on a 12-inch display for someone with eyes like mine.
+
+[![](/assets/images/posts/asus-display-lines.png){: .bordered }](/assets/images/posts/asus-display-lines.png)
 
 # Performance
 
-So, as 
+With its KabyLake Intel i5 and 8GB of RAM, the ZenBook 3 can do everything I need it to. It handles multiple Chrome tabs very well, with little or no lag when switching between them. It also streams HD YouTube and Vimeo videos smoothly, with no noticeable stutter.
+
+[![](/assets/images/posts/asus-chrome-open.png){: .bordered }](/assets/images/posts/asus-chrome-open.png)
+
+For simple web developer like me, the ZenBook 3 is more than enough to handle running VMs serving everything from a full Rails stack to a small Jekyll blog. More intense users of virtualization may find 8GB of RAM limiting, in which case I'd recommend upgrading to the higher, 16GB model (UX390UA-XH74-BL). Anyone doing kernel-compilation might find the Intel i5-7500U a bottleneck, in which case I'd look for a different, quad-core laptop.
+
+[![](/assets/images/posts/asus-vagrant-open.png){: .bordered }](/assets/images/posts/asus-vagrant-open.png)
+
+I wouldn't expect the Intel HD 620 to handle Crysis on the highest settings, but for Minecraft and Stardew Valley, everything runs nice and smooth!
+
+[![](/assets/images/posts/asus-stardew-open.png){: .bordered }](/assets/images/posts/asus-stardew-open.png)
+
+My operating system of choice is [Ubuntu 16.04](https://www.ubuntu.com/), which runs just fine on the ZenBook 3.
 
 # Battery Life
 
+Rarely do I find myself far from a plug for my charger, so battery life isn't _super_ important to me. However, it's convenient to use my laptop on the move when traveling.
+
 [![](/assets/images/posts/asus-charging.png){: .bordered }](/assets/images/posts/asus-charging.png)
 
-Battery life isn't as important to me as some road warriors out there, but the ability to be away from the plug is a nice convenience. Based on the usage I've described above, my Thinkpad 13 gives me an average of 5 hours of usage per charge. Keep in mind, I run [Ubuntu 16.04](https://www.ubuntu.com/) as my main operating system. If history is any indication, I'm sure Windows is a bit more power-efficient.
+On average, I get about 6 hours with basic usage in Ubuntu. In Windows, I get a around 7 hours, though I rarely spend much time in Windows at all. Asus advertises the ZenBook 3 at 9 hours of battery-life. Obviously, battery-use is highly dependent on usage, which varies from user to user.
 
+I'm a huge fan of the USB-C port, despite the need for [a hub]() when interfacing with other devices. My phone (Sony Xperia XZ) uses a USB-C port for charging. It's extremely useful being able to use one charger for my phone and laptop, especially when traveling.
+
+[![](/assets/images/posts/asus-usb-c-charger.png){: .bordered }](/assets/images/posts/asus-usb-c-charger.png)
 
 # Final Thoughts
 
-The Thinkpad 13 is probably one of the best, bang-for-buck laptops currently available on the market. It isn't the quad-core software development powerhouse that is the [Apple Macbook Pro](http://www.apple.com/shop/buy-mac/macbook-pro) or [Dell XPS 15](http://www.dell.com/en-us/shop/productdetails/xps-15-9550-laptop), but it gets the job done for most programmers out there. Quite honestly, it'd be hard to find a laptop that *isn't* suitable for programming these days.
+For those who are heavy typists, the Asus ZenBook 3 is probably not the most ideal candidate, as the keyboard is pretty underwhelming. The touchpad is better than most laptops, but the placement of the fingerprint reader seems like a poor design choice.
 
-For someone looking for a no-frills, inexpensive daily driver, the Thinkpad 13 an excellent choice!
+However, its durable and slim profile make it a great companion for road-warriors. It has a bright and vibrant IPS display, great for watching movies on those long plane-rides. For someone looking for a decent Windows 10 laptop with similar design to an Apple MacBook, the Asus ZenBook 3 is an excellent choice!
