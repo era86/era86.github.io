@@ -18,8 +18,8 @@ The [history of Kanban](http://www.infoq.com/articles/hiranabe-lean-agile-kanban
 [![QueueDo UI](/assets/images/posts/queue-do-ui.png){: .bordered }](/assets/images/posts/queue-do-ui.png)
 
   * **To Do**:       tasks that are prioritized and ready to be worked on
-  * **In Progress**: tasks that are currently being worked on            
-  * **Complete**:    tasks that are finished                             
+  * **In Progress**: tasks that are currently being worked on
+  * **Complete**:    tasks that are finished
 
 The goal is to move each individual task in one direction across each state until it reaches it's final state: completion. Each column **must have a limit on the number of tasks it holds at any given time**. By organizing and visualizing work this way, we can effectively pinpoint slowdowns or breakdowns in the work process. As we find and eliminate such "bottlenecks", we are working to achieve **Kaizen**, or continuous improvement.
 
@@ -47,11 +47,11 @@ Kanban doesn't strictly enforce deadlines. So, there is always the possibility o
 
 Here are some handy tools I've used as electronic Kanban boards.
 
-* [Greenhopper](http://www.atlassian.com/software/greenhopper/overview/kanban): This is a Kanban board built on top of JIRA by Atlassian. It isn't free, but provides a wide range of features and tools for analyzing progress. If you're looking for something very "enterprise", this is a good bet.  
+* [Greenhopper](http://www.atlassian.com/software/greenhopper/overview/kanban): This is a Kanban board built on top of JIRA by Atlassian. It isn't free, but provides a wide range of features and tools for analyzing progress. If you're looking for something very "enterprise", this is a good bet.
 
-* [Trello](https://trello.com/): For smaller projects, Trello is one of the best tools out there for organizing workflow. The interface is very clean and simple. It's also free! Whether you're looking for an electronic Kanban board for your personal life or small business, Trello is an excellent choice.  
+* [Trello](https://trello.com/): For smaller projects, Trello is one of the best tools out there for organizing workflow. The interface is very clean and simple. It's also free! Whether you're looking for an electronic Kanban board for your personal life or small business, Trello is an excellent choice.
 
-* [QueueDo](http://www.runtime-era.com/2013/02/side-project-queuedo.html): I also wrote a small task tracker in the form of a very simple Kanban board called QueueDo. Though it's not full of features, it's quick and easy for daily tasks. Shameless plug, I know.  
+* [QueueDo]({% _posts/2013-02-03-side-project-queuedo.markdown %}): I also wrote a small task tracker in the form of a very simple Kanban board called QueueDo. Though it's not full of features, it's quick and easy for daily tasks. Shameless plug, I know.
 
 How have Kanban boards improved the workflow in your workplace or personal life? I'm curious to know!
 

@@ -21,18 +21,18 @@ There are two main benefits to cohesive modules in Ruby: **less coupling** and *
 
 ## Implementing Phones
 
-By keeping our modules small and focused, we are simply applying the [Single Responsibility Principle](http://www.runtime-era.com/2015/02/solid-review-single-responsibility.html), but for modules. For example, let's create a module called `Phone`: 
+By keeping our modules small and focused, we are simply applying the [Single Responsibility Principle]({% link _posts/2015-02-06-solid-review-single-responsibility.markdown %}), but for modules. For example, let's create a module called `Phone`:
 
 {% highlight ruby %}
 module Phone
   def call(number)
     "Calling #{number}..."
   end
- 
+
   def hangup
     "Hanging up!"
   end
- 
+
   def text(number, message)
     "Texting '#{message}' to #{number}."
   end
@@ -54,7 +54,7 @@ Let's create a new class called `RotaryPhone`:
 {% highlight ruby %}
 class RotaryPhone
   include Phone
- 
+
   # Eek... code smell.
   def text(number, message)
     raise 'Cannot text on this type of phone!'
@@ -83,12 +83,12 @@ module BasicPhone
   def call(number)
     "Calling #{number}..."
   end
- 
+
   def hangup
     "Hanging up!"
   end
 end
- 
+
 module MobilePhone
   def text(number, message)
     "Texting '#{message}' to #{number}."
@@ -103,7 +103,7 @@ class CellPhone
   include BasicPhone
   include MobilePhone
 end
- 
+
 class RotaryPhone
   include BasicPhone
 end

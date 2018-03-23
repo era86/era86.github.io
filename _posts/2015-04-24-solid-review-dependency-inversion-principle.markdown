@@ -9,17 +9,17 @@ comments: true
 
 *Note: This is part of a series of articles reviewing the [five SOLID Principles of object-oriented programming](http://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29).*
 
-The final SOLID principle is known as the Dependency Inversion principle. Arguably the most important of the five principles, the Dependency Inversion principle can be thought of as a culmination of the principles preceding it. Systems that abide by the other SOLID principles tend to follow the Dependency Inversion principle as a result. The principle states:  
+The final SOLID principle is known as the Dependency Inversion principle. Arguably the most important of the five principles, the Dependency Inversion principle can be thought of as a culmination of the principles preceding it. Systems that abide by the other SOLID principles tend to follow the Dependency Inversion principle as a result. The principle states:
 
 > "High-level modules should not depend on low-level modules."
 
-A better way to think about it is:  
+A better way to think about it is:
 
 > "Abstractions should not depend upon details. Details should depend upon abstractions."
 
-In a static-typed language like Java, "abstractions" can be implemented and enforced explicitly via [interfaces](http://docs.oracle.com/javase/tutorial/java/concepts/interface.html). However, in a dynamic language like Ruby, we depend on [duck-typing](http://en.wikipedia.org/wiki/Duck_typing) to describe an object's interface. Even without explicit interfaces in Ruby, the Dependency Inversion principle still holds value! We should still aim to **depend on abstractions rather than details**.  
+In a static-typed language like Java, "abstractions" can be implemented and enforced explicitly via [interfaces](http://docs.oracle.com/javase/tutorial/java/concepts/interface.html). However, in a dynamic language like Ruby, we depend on [duck-typing](http://en.wikipedia.org/wiki/Duck_typing) to describe an object's interface. Even without explicit interfaces in Ruby, the Dependency Inversion principle still holds value! We should still aim to **depend on abstractions rather than details**.
 
-Let's look at an example! We'll revisit a simple example from my [blog post on the Open/Closed Principle](http://www.runtime-era.com/2015/02/solid-review-openclosed-principle.html).  
+Let's look at an example! We'll revisit a simple example from my [blog post on the Open/Closed Principle]({% link _posts/2015-02-12-solid-review-openclosed-principle.markdown %}).
 
 ## A Simple String Transformer
 
@@ -61,9 +61,9 @@ Transformer.new('Hello').transformed_string(:binary)
 # "0100100001100101011011000110110001101111"
 {% endhighlight %}
 
-Now, our `Transformer` takes strings and transforms them into one of two different types: a Ruby hash or its binary representation. At this point, we should notice some code-smell! The `transformed_string` method is very dependent on `JSON.parse` and `String.unpack`. These are implementation details that our Transformer shouldn't care about.  
+Now, our `Transformer` takes strings and transforms them into one of two different types: a Ruby hash or its binary representation. At this point, we should notice some code-smell! The `transformed_string` method is very dependent on `JSON.parse` and `String.unpack`. These are implementation details that our Transformer shouldn't care about.
 
-Let's apply the Dependency Inversion principle by making `Transformer` depend on _an abstraction_ rather than coupling to concrete details!  
+Let's apply the Dependency Inversion principle by making `Transformer` depend on _an abstraction_ rather than coupling to concrete details!
 
 ## The Transformation Abstraction
 
@@ -118,6 +118,6 @@ Transformer.new('Hello').transformed_string(MD5Transformation)
 
 ## Conclusion
 
-As you can see, the [Open/Closed principle](http://www.runtime-era.com/2015/02/solid-review-openclosed-principle.html) is highly correlated with the Dependency Inversion principle! We actually end up following the Open/Closed principle by abiding by the Dependency Inversion principle. In fact, some form of dependency abstraction is often required to abide by all the other SOLID principles. If there's one principle to remember out of all the SOLID principles, it's the Dependency Inversion principle: **depend on abstractions, not low-level details**!  
+As you can see, the [Open/Closed principle]({% link _posts/2015-02-12-solid-review-openclosed-principle.markdown %}) is highly correlated with the Dependency Inversion principle! We actually end up following the Open/Closed principle by abiding by the Dependency Inversion principle. In fact, some form of dependency abstraction is often required to abide by all the other SOLID principles. If there's one principle to remember out of all the SOLID principles, it's the Dependency Inversion principle: **depend on abstractions, not low-level details**!
 
 Happy coding!
