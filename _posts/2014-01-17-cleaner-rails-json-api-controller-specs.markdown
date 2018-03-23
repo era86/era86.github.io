@@ -21,7 +21,7 @@ end
 
 Following standard TDD practices, we begin by writing a test. Here's a first crack at a controller spec describing the `create` action on our `ArticlesController`:
 
-{% highlight ruby %}
+{% highlight ruby %}{% raw %}
 describe ArticlesController do
   describe '#create' do
     let(:title)  { 'New Title' }
@@ -44,7 +44,7 @@ describe ArticlesController do
     end
   end
 end
-{% endhighlight %}
+{% endraw %}{% endhighlight %}
 
 The first assertion makes sure an `Article` was actually created. The next two assertions check the response. A successful creation should return the new `Article`'s attributes in a JSON object. With the spec written, we can implement our controller:
 
@@ -64,7 +64,7 @@ end
 
 When we run our test, it passes. However, our test is incorrect! What if, for some odd reason, the title and body were actually swapped in the response (title has body, body has title)? The test would still pass!  While our spec ensures the correct values are in the response, it doesn't ensure the proper structure. Let's try again:
 
-{% highlight ruby %}
+{% highlight ruby %}{% raw %}
 describe ArticlesController do
   describe '#create' do
     let(:title)  { 'New Title' }
@@ -87,13 +87,13 @@ describe ArticlesController do
     end
   end
 end
-{% endhighlight %}
+{% endraw %}{% endhighlight %}
 
 In this version, we make our test more descriptive by declaring our response object as the [subject](http://betterspecs.org/#subject). We also parse our response into a Hash by using `JSON.parse()` in the standard [Ruby JSON](http://www.ruby-doc.org/stdlib-2.0.0/libdoc/json/rdoc/JSON.html) library. Now, our assertions make sure we get the correct attributes from the proper keys in the response object. We also get the added bonus of ensuring a valid JSON response by parsing it in our subject.
 
 Our test is now correct, but it can still be improved. When I'm testing JSON responses, I like to use [OpenStruct](http://www.ruby-doc.org/stdlib-2.0/libdoc/ostruct/rdoc/OpenStruct.html) to clean up my assertions. In simple terms, an `OpenStruct` takes a Hash and returns an object with methods named according to each key in the `Hash`. So, we can make the keys in our JSON response behave like methods on an object! Using `OpenStruct`, here is a prettier version of our test:
 
-{% highlight ruby %}
+{% highlight ruby %}{% raw %}
 describe ArticlesController do
   describe '#create' do
     let(:title)  { 'New Title' }
@@ -110,7 +110,7 @@ describe ArticlesController do
     its(:body) { should == body }
   end
 end
-{% endhighlight %}
+{% endraw %}{% endhighlight %}
 
 Compared to our first draft, this spec is more concise, correct, and straightforward.
 
