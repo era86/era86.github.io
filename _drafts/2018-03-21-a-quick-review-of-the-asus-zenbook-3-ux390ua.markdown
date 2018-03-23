@@ -7,13 +7,13 @@ comments: true
 
 [![Asus Zenbook 3](/assets/images/posts/asus-zenbook-main.png){: .bordered.centered }](/assets/images/posts/asus-zenbook-main.png)
 
-In 2016, I purchased a [Thinkpad 13]() to replace my MacBook. After a couple weeks of use, I ran into issues with the Thinkpad's battery life and suspend functionality in Ubuntu. I also found its chassis a bit flimsy, flexible, and cheap-feeling. It was fine for home-use, but not for travel, since I tend to pack my laptops tightly into my backpack along with shoes, clothes, etc. I didn't trust the plastic chassis to withstand any of that punishment.
+In 2016, I purchased a [Thinkpad 13]({% link _posts/2016-11-26-a-quick-review-of-the-lenovo-thinkpad-13.markdown %}) to replace my Apple MacBook. After a couple weeks of use, I ran into issues with the Thinkpad's battery life and suspend functionality in Ubuntu. I also found its chassis a bit flimsy, flexible, and cheap-feeling. It was fine for home-use, but not for travel, since I tend to pack my laptops tightly into my backpack along with shoes, clothes, etc. I didn't trust the plastic chassis to withstand any of that punishment.
 
-Last September, I decided to move on from the Thinkpad 13. There were many laptops I considered, most of which fit my requirements. After a couple weeks of research, I eventually pulled the trigger on an [Asus ZenBook 3]().
+Last September, I decided to move on from the Thinkpad 13. I considered many laptops, most of which fit my requirements. After a couple weeks of research, I eventually pulled the trigger on an [Asus ZenBook 3](https://www.asus.com/us/Laptops/ASUS-ZenBook-3-UX390UA).
 
 [![Zenbook Box](/assets/images/posts/asus-zenbook-box.png){: .bordered }](/assets/images/posts/asus-zenbook-box.png)
 
-The Asus ZenBook 3 has more than enough power to perform the basic tasks I require at home: streaming video, writing code, running VMs, and playing [Stardew Valley](). It also features an extremely slim, aluminum chassis (very similar to the MacBook), sturdy enough to withstand any road-warrior punishment forced upon it.
+The Asus ZenBook 3 has more than enough power to perform the basic tasks I require at home: streaming video, writing code, running VMs, and playing [Stardew Valley](https://stardewvalley.net/). It also features an extremely slim, aluminum chassis (very similar to the MacBook), sturdy enough to withstand any road-warrior punishment forced upon it.
 
 It's been a couple of months, now. So, I decided to write a quick review of the laptop so far.
 
@@ -40,11 +40,11 @@ Here is a list of some of the tasks my daily-driver laptop needs to be capable o
 * Withstanding punishment in my backpack when traveling
 * Charging with a USB-C (Thunderbolt) charger (so I can share the charger with my phone)
 
-Based on my requirements, I opted for the Intel Core i5 model (UX390UA-DH51-GR):
+Based on my requirements, I opted for the Intel Core i5 model ([UX390UA-DH51-GR](https://www.amazon.com/ZenBook-Ultraportable-i5-7200U-KabyLake-Fingerprint/dp/B01LHUA1NM)):
 
 | Processor          | Intel Core i5-7200U KabyLake CPU
 | Operating System   | Ubuntu 16.04 (dual boot w/ Windows 10 Home 64)
-| Memory             | 8GB LPDDR3 Onboard RAM 
+| Memory             | 8GB LPDDR3 Onboard RAM
 | Graphics           | Intel HD Graphics 620
 | Battery            | 6cells 40Wh Polymer Battery
 | Fingerprint Reader | Included
@@ -142,7 +142,7 @@ With its KabyLake Intel i5 and 8GB of RAM, the ZenBook 3 can do everything I nee
 
 [![](/assets/images/posts/asus-chrome-open.png){: .bordered }](/assets/images/posts/asus-chrome-open.png)
 
-For simple web developer like me, the ZenBook 3 is more than enough to handle running VMs serving everything from a full Rails stack to a small Jekyll blog. More intense users of virtualization may find 8GB of RAM limiting, in which case I'd recommend upgrading to the higher, 16GB model (UX390UA-XH74-BL). Anyone doing kernel-compilation might find the Intel i5-7500U a bottleneck, in which case I'd look for a different, quad-core laptop.
+For simple web developer like me, the ZenBook 3 is more than enough to handle running VMs serving everything from a full Rails stack to a small Jekyll blog. More intense users of virtualization may find 8GB of RAM limiting, in which case I'd recommend upgrading to the higher, 16GB model ([UX390UA-XH74-BL](https://www.amazon.com/12-5-inch-Ultra-Slim-Lightweight-Processor-Fingerprint/dp/B01LHUAFAQ)). Anyone doing kernel-compilation might find the Intel i5-7500U a bottleneck, in which case I'd look for a different, quad-core laptop.
 
 [![](/assets/images/posts/asus-vagrant-open.png){: .bordered }](/assets/images/posts/asus-vagrant-open.png)
 
@@ -158,9 +158,9 @@ Rarely do I find myself far from a plug for my charger, so battery life isn't _s
 
 [![](/assets/images/posts/asus-charging.png){: .bordered }](/assets/images/posts/asus-charging.png)
 
-On average, I get about 6 hours with basic usage in Ubuntu. In Windows, I get a around 7 hours, though I rarely spend much time in Windows at all. Asus advertises the ZenBook 3 at 9 hours of battery-life. Obviously, battery-use is highly dependent on usage, which varies from user to user.
+On average, I get about 4-5 hours with basic usage in Ubuntu. In Windows, I get a around 7 hours, though I rarely spend much time in Windows at all. Asus advertises the ZenBook 3 at 9 hours of battery-life. Obviously, this will vary highly dependent on usage, which is different for every user. It takes about 40 minutes to fully charge.
 
-I'm a huge fan of the USB-C port, despite the need for [a hub]() when interfacing with other devices. My phone (Sony Xperia XZ) uses a USB-C port for charging. It's extremely useful being able to use one charger for my phone and laptop, especially when traveling.
+I'm a huge fan of the USB-C port, despite the need for [a hub](https://www.amazon.com/gp/product/B019R9ILTG) when interfacing with other devices. My phone ([Sony Xperia XZ](https://www.gsmarena.com/sony_xperia_xz-8313.php)) uses a USB-C port for charging. It's extremely useful being able to use one charger for my phone and laptop, especially when traveling.
 
 [![](/assets/images/posts/asus-usb-c-charger.png){: .bordered }](/assets/images/posts/asus-usb-c-charger.png)
 
