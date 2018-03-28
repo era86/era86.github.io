@@ -84,9 +84,9 @@ I recently took my ZenBook 3 on a two-week trip to the Philippines and it was th
 
 [![](/assets/images/posts/asus-vs-macbook-top.png){: .bordered }](/assets/images/posts/asus-vs-macbook-top.png)
 
-[![](/assets/images/posts/asus-vs-macbook-side.png){: .bordered }](/assets/images/posts/asus-vs-macbook-side.png)
-
 [![](/assets/images/posts/asus-vs-macbook-open.png){: .bordered }](/assets/images/posts/asus-vs-macbook-open.png)
+
+[![](/assets/images/posts/asus-vs-macbook-side.png){: .bordered }](/assets/images/posts/asus-vs-macbook-side.png)
 
 It's very clear the ZenBook took much of its design influence from the MacBook.
 
@@ -95,6 +95,8 @@ It's very clear the ZenBook took much of its design influence from the MacBook.
 The ZenBook 3 has a low-profile, illuminated chiclet keyboard. While it isn't anywhere near as comfortable as the Thinkpad 13 (or any Thinkpad for that matter), it isn't as horrendous as the "butterfly" keys on the MacBook.
 
 [![](/assets/images/posts/asus-keyboard-vs-macbook.png){: .bordered }](/assets/images/posts/asus-keyboard-vs-macbook.png)
+
+[![](/assets/images/posts/asus-keyboard-vs-macbook-diag.png){: .bordered }](/assets/images/posts/asus-keyboard-vs-macbook-diag.png)
 
 The keys don't offer much feedback. Also, without a hard enough key-press, the keys don't always register. This is pretty annoying, since it forces me to "bottom out" on each key, which defeats one of the main purposes of a low-profile keyboard.
 
@@ -112,7 +114,7 @@ The touchpad on the ZenBook 3 is comfortable and very smooth-to-touch. It isn't 
 
 The push-to-click functionality requires an excessive amount of pressure to register, which can make the whole laptop shake when it's on my lap. The tap-to-click functionality isn't perfect either, since tapping on the touchpad causes the pointer to jump around.
 
-[![](/assets/images/posts/asus-touchpad-finger.png){: .bordered }](/assets/images/posts/asus-touchpad-finger.png)
+[![](/assets/images/posts/asus-touchpad-diag.png){: .bordered }](/assets/images/posts/asus-touchpad-diag.png)
 
 There is a visual separator on the bottom of the touchpad to distinguish between left and right clicks, but it isn't super accurate. In fact, I find myself clicking on the far left or right corner just to get it to do what I want.
 
@@ -127,6 +129,8 @@ For some strange reason, Asus put the fingerprint reader directly on the top-rig
 The ZenBook 3 boasts a bright and vibrant high-resolution IPS display. It also has a very unintrusive, slim bezel.
 
 [![](/assets/images/posts/asus-display-colors.png){: .bordered }](/assets/images/posts/asus-display-colors.png)
+
+[![](/assets/images/posts/asus-display-vs-macbook.png){: .bordered }](/assets/images/posts/asus-display-vs-macbook.png)
 
 The "FHD" 1920 x 1080 on the ZenBook 3 is a welcome change from the 1440 x 900 resolution on the MacBook. It's nice to be able to watch HD videos in full 1080p.
 
