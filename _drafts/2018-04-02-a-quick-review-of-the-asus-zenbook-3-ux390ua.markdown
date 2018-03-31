@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Quick Review of the Asus ZenBook 3 UX390UA"
-date:   2018-03-21
+date:   2018-04-02
 comments: true
 ---
 
