@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building a Simple Raspberry Pi Dashcam"
-date: 2018-04-09
+date: 2018-04-10
 comments: true
 ---
 
