@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Enabling WiFi and SSH on a Raspberry Pi in Ubuntu 16.04"
-date: 2018-04-09
+date: 2018-04-10
 comments: true
 ---
 
