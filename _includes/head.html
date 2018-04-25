@@ -25,7 +25,7 @@
   {% else %}
     <meta property="og:image" content="{{ site.url}}/assets/images/me-sippin-coffee.jpg" />
   {% endif %}
-  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
   <meta property="og:description" content="{% if page.content %}{{ page.content | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
 
   <!-- for Twitter -->          
