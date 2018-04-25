@@ -2,6 +2,7 @@
 layout: post
 title:  "Getting My New Macbook Dev-Ready"
 date:   2016-10-17
+landing-image: "/assets/images/posts/macbook.jpg"
 comments: true
 ---
 

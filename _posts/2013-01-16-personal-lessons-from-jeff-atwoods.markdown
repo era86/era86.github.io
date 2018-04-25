@@ -2,10 +2,11 @@
 layout: post
 title: Personal Lessons from Jeff Atwood's "Effective Programming"
 date: 2013-01-16
+landing-image: "/assets/images/posts/effective-programming-book.png"
 comments: true
 ---
 
-[![Effective Programming](/assets/images/posts/effective-programming-book.png){: .bordered.landing-image.centered }](/assets/images/posts/effective-programming-book.png)
+[![Effective Programming]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
  I recently finished Jeff Atwood's blog-turned-book: [Effective Programming: More Than Writing Code](http://www.amazon.com/Effective-Programming-More-Writing-ebook/dp/B008HUMTO0).  It's a compilation of blog entries about different ways to improve programming ability outside of the typical "study and follow a code tutorial" method. The whole book is worth a read, but here are some interesting points I took away from the book and the names of their chapters:
 

@@ -2,10 +2,11 @@
 layout: post
 title: "Dynamic ActiveRecord Database Connections (without Rails)"
 date: 2012-11-15
+landing-image: "/assets/images/posts/dynamic-activerecord.png"
 comments: true
 ---
 
-[![Dynamic ActiveRecord](/assets/images/posts/dynamic-activerecord.png){: .bordered.landing-image.centered }](/assets/images/posts/dynamic-activerecord.png)
+[![Dynamic ActiveRecord]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 If you are familiar with [Ruby on Rails](http://rubyonrails.org/), you know you can configure which database to use based on the *RAILS\_ENV* environment variable. This can be one of several values: *production*, *development*, *test*, etc. You can read more about it in the [Rails Environment Settings](http://guides.rubyonrails.org/configuring.html#rails-environment-settings) section in the Ruby on Rails Guide. You can bet, somewhere in the code, Rails is doing some sort of magic with **ActiveRecord** to tell it which database connection to establish. **What if we aren't using Rails?!**
 

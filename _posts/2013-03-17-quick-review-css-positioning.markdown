@@ -2,10 +2,11 @@
 layout: post
 title: 'Quick Review: CSS Positioning'
 date: 2013-03-17
+landing-image: "/assets/images/posts/yoga.png"
 comments: true
 ---
 
-[![Yoga](/assets/images/posts/yoga.png){: .bordered.landing-image.centered }](/assets/images/posts/yoga.png)
+[![Yoga]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 For web designers and developers, it is important to understand how to lay elements out on a page. Anybody can hack together a gorgeous looking webpage, but it's important to write clean code along with it. It's amazing how a basic understanding of HTML and CSS can make web projects more clean and maintainable. This is a little primer on the basics of CSS positioning.
 

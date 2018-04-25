@@ -2,6 +2,7 @@
 layout: post
 title: 'SOLID Review: Interface Segregation Principle'
 date: 2015-03-27
+landing-image: "/assets/images/posts/clutter.jpg"
 comments: true
 ---
 

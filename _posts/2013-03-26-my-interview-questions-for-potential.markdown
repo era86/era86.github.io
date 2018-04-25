@@ -2,10 +2,11 @@
 layout: post
 title: My Interview Questions for Potential Employers
 date: 2013-03-26
+landing-image: "/assets/images/posts/office-space.jpg"
 comments: true
 ---
 
-[![Office Space](/assets/images/posts/office-space.jpg){: .bordered.landing-image.centered }](/assets/images/posts/office-space.jpg)
+[![Office Space]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 By common definition, the purpose of a job interview is to allow an employer to screen candidates and find someone to fill an open job position. Each and every applicant must prove his or her worth to the potential employer. Many will apply, but only one (or very few) will be selected.
 

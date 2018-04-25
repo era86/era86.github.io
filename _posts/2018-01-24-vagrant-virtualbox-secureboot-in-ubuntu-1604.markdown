@@ -2,6 +2,7 @@
 layout: post
 title:  "Vagrant and VirtualBox with Secure Boot in Ubuntu 16.04"
 date:   2018-01-24
+landing-image: "/assets/images/posts/secure-computer.png"
 comments: true
 ---
 

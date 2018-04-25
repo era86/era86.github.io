@@ -2,10 +2,11 @@
 layout: post
 title: "Wake Your Entrepreneurial Spirit at a Startup"
 date: 2012-11-01
+landing-image: "/assets/images/posts/lightbulbs.jpg"
 comments: true
 ---
 
-[![Lightbulbs](/assets/images/posts/lightbulbs.jpg){: .bordered.landing-image.centered }](/assets/images/posts/lightbulbs.jpg)
+[![Lightbulbs]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 I believe everyone, at the very least, has *thought* about building an awesome product and making a ton of cash by selling it to the masses.  It's this ambitious dream that drives us to come up with great ideas and take huge risks trying to share them with the world. This is the **entrepreneurial spirit**, and *everyone* has it!
 

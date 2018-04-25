@@ -2,6 +2,7 @@
 layout: post
 title:  "A Quick Review of the Asus ZenBook 3 UX390UA"
 date:   2018-04-02
+landing-image: "/assets/images/posts/asus-zenbook-main.png"
 comments: true
 ---
 

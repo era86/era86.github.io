@@ -2,10 +2,11 @@
 layout: post
 title: "Guidelines for doing Work at Coffee Shops"
 date: 2012-09-28
+landing-image: "/assets/images/posts/remedy-teas.jpg"
 comments: true
 ---
 
-[![Remedy Teas](/assets/images/posts/remedy-teas.jpg){: .bordered.landing-image.centered }](/assets/images/posts/remedy-teas.jpg)
+[![Remedy Teas]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 Imagine this: you walk into a coffee (or tea) shop and purchase your favorite beverage. Maybe you're a little hungry, so you pick up a small sandwich or salad. Now, you look around for a place to sit. Maybe it's the comfortable leather chair or the rustic table by the window. Either way, you are ready to enjoy the products you've just purchased.
 

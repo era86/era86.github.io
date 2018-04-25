@@ -2,10 +2,11 @@
 layout: post
 title: "Quick Review: Basic Observer Design Pattern in Ruby"
 date: 2012-12-22
+landing-image: "/assets/images/posts/observer-pattern.png"
 comments: true
 ---
 
-[![Observer Pattern](/assets/images/posts/observer-pattern.png){: .bordered.landing-image.centered }](/assets/images/posts/observer-pattern.png)
+[![Observer Pattern]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 Every so often, it's nice to give yourself a quick review of basic topics in software. Today, I wanted to review the **[observer](http://www.oodesign.com/observer-pattern.html)** design pattern and give a very simple implementation of it in Ruby. The observer pattern allows several *observers* to be notified when an observable object, or *subject*, changes its state. When the subject sends an update notification, the observers can act accordingly based on their type.
 

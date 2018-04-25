@@ -2,10 +2,11 @@
 layout: post
 title: 'SOLID Review: Open/Closed Principle'
 date: 2015-02-12
+landing-image: "/assets/images/posts/ocp.png"
 comments: true
 ---
 
-[![OCP](/assets/images/posts/ocp.png){: .bordered.landing-image.centered }](/assets/images/posts/ocp.png)
+[![OCP]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 *Note: This is part of a series of articles reviewing the [five SOLID Principles of object-oriented programming](http://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29).*
 

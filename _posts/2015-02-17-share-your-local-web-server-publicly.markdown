@@ -2,6 +2,7 @@
 layout: post
 title: Share Your Local Web Server Publicly using ngrok
 date: 2015-02-17
+landing-image: "/assets/images/posts/ngrok.png"
 comments: true
 ---
 

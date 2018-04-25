@@ -2,6 +2,7 @@
 layout: post
 title:  "Fixing Volume Controls on the Asus ZenBook 3 (UX390UA) in Ubuntu 16.04"
 date:   2017-10-03
+landing-image: "/assets/images/posts/asus-speaker.jpg"
 comments: true
 ---
 

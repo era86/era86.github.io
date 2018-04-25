@@ -2,10 +2,11 @@
 layout: post
 title: "Quick Review: Delegator Pattern in Java"
 date: 2013-01-13
+landing-image: "/assets/images/posts/baton.jpg"
 comments: true
 ---
 
-[![Baton](/assets/images/posts/baton.jpg){: .bordered.landing-image.centered }](/assets/images/posts/baton.jpg)
+[![Baton]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 In the object-oriented world, there are times when our classes need to share some or all of their functionality with others. There are many different ways we can achieve this. Depending on the programming language, we can tell our class to inherit its behavior from one or more other classes. We might define and implement several interfaces. Many dynamic languages allow "including" or "mixing in" behavior to share functionality.
 

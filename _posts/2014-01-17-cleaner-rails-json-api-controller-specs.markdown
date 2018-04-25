@@ -2,10 +2,11 @@
 layout: post
 title: Cleaner Rails JSON API Controller Specs with OpenStruct
 date: 2014-01-17
+landing-image: "/assets/images/posts/rspec.png"
 comments: true
 ---
 
-[![RSpec](/assets/images/posts/rspec.png){: .bordered.landing-image.centered }](/assets/images/posts/rspec.png)
+[![RSpec]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 As many of us know, Ruby on Rails makes it really easy to write RESTful APIs. Paired with a rich client-side framework, we can create applications with slick user interfaces. A common approach for this is to write JSON APIs on the server for consumption by a Javascript front-end framework. To test my APIs, I like to use [RSpec](http://rspec.info/) and build specs for the actions on each of the controllers. The goal of the tests is to make sure each JSON response returns the correct information in the proper structure.
 

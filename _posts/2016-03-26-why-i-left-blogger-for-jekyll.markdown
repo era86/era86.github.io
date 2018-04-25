@@ -2,6 +2,7 @@
 layout: post
 title:  Why I left Blogger for Jekyll
 date:   2016-03-26
+landing-image: "/assets/images/posts/jekyll-css.png"
 comments: true
 ---
 

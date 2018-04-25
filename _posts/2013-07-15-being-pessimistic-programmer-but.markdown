@@ -2,10 +2,11 @@
 layout: post
 title: Being a Pessimistic Programmer, but a Positive Person
 date: 2013-07-15
+landing-image: "/assets/images/posts/programmer-problems.jpg"
 comments: true
 ---
 
-[![Programmer Problems](/assets/images/posts/programmer-problems.jpg){: .bordered.landing-image.centered }](/assets/images/posts/programmer-problems.jpg)
+[![Programmer Problems]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 I'll be honest. As a programmer, my mindset is usually more negative than positive. I've accepted that my code, at some point, *will fail* and the software I write will *never be complete*. As I'm planning out projects, I'm usually thinking about the worst-case scenarios and possible issues. I've been burned by ever-changing requirements from clients who expect too much in too little time. So, sometimes it's hard to trust anything the client says at all.
 

@@ -2,10 +2,11 @@
 layout: post
 title:  "A Quick Review of the Lenovo Thinkpad 13"
 date:   2016-11-26
+landing-image: "/assets/images/posts/thinkpad-13-main.png"
 comments: true
 ---
 
-[![Thinkpad 13](/assets/images/posts/thinkpad-13-main.png){: .bordered.centered }](/assets/images/posts/thinkpad-13-main.png)
+[![Thinkpad 13](){: .bordered.centered }](/assets/images/posts/thinkpad-13-main.png)
 
 Back in April, I purchased a [Macbook](http://www.apple.com/macbook/) to take around with me during my [month-long trip across Europe](http://urban-trailseeker.blogspot.com/2016/07/backpacks-and-train-tracks-our-month-in.html). Its portability was the main draw, making it really easy to carry around in my 40-liter REI backpack.
 

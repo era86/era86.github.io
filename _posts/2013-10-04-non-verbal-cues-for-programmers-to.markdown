@@ -2,10 +2,11 @@
 layout: post
 title: Non-Verbal Cues for Programmers to say "Leave me alone!"
 date: 2013-10-04
+landing-image: "/assets/images/posts/zuck.jpg"
 comments: true
 ---
 
-[![Zuck](/assets/images/posts/zuck.jpg){: .bordered.landing-image.centered }](/assets/images/posts/zuck.jpg)
+[![Zuck]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 Interruptions are an ultimate killer of productivity for any software developer. When writing code, everything from algorithms to variable names are stored temporarily in the brain. If you are interrupted, your brain is forced free up room in order to switch context. This knocks bits and pieces of valuable programming information out of your head!
 

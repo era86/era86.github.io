@@ -2,6 +2,7 @@
 layout: post
 title: 'SOLID Review: Dependency Inversion Principle'
 date: 2015-04-24
+landing-image: "/assets/images/posts/plug.jpg"
 comments: true
 ---
 

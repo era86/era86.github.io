@@ -2,10 +2,11 @@
 layout: post
 title: "Quick and Dirty Node.js Process (Job) Queue"
 date: 2012-10-11
+landing-image: "/assets/images/posts/people-in-line.jpg"
 comments: true
 ---
 
-[![People in Line](/assets/images/posts/people-in-line.jpg){: .bordered.landing-image.centered }](/assets/images/posts/people-in-line.jpg)
+[![People in Line]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 I recently began experimenting with [nodejs](http://nodejs.org/) for a small web scraping project. I wrote a tiny script that goes out to lots of URLs and downloads files to disk. The simple solution was to iterate through the list and send a request to load the URL and download the page.
 

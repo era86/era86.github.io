@@ -2,10 +2,11 @@
 layout: post
 title: "Grouping HTML Hex Colors by Hue in JavaScript"
 date: 2011-11-15
+landing-image: "/assets/images/posts/colored-blankets.jpg"
 comments: true
 ---
 
-[![Colored Blankets](/assets/images/posts/colored-blankets.jpg){: .bordered.landing-image.centered }](/assets/images/posts/colored-blankets.jpg)
+[![Colored Blankets]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 I was recently tasked with creating a color pallete for some custom (legacy) code for an existing e-commerce website. One of the requirements was to show the colors grouped by similar tint. I thought to myself, this is a classic sorting problem. There was a catch, though.  What do we sort?
 

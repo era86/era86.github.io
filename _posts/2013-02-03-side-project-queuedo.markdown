@@ -2,10 +2,11 @@
 layout: post
 title: "Side Project: QueueDo"
 date: 2013-02-03
+landing-image: "/assets/images/posts/queue-do.png"
 comments: true
 ---
 
-[![Queue Do](/assets/images/posts/queue-do.png){: .bordered.landing-image.centered }](http://queuedo.herokuapp.com)
+[![Queue Do]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 When I work on my own projects, I like to keep track of the tasks involved in getting them done. I started by creating to-do lists in spreadsheets because it was quick, easy, and simple. Nowadays, I enjoy using [Trello](https://trello.com/). After signing up and customizing the boards, I can visualize any project with a virtual Scrum board.
 

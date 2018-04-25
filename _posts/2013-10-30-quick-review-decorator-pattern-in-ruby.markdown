@@ -2,10 +2,11 @@
 layout: post
 title: 'Quick Review: Decorator Pattern in Ruby'
 date: 2013-10-30
+landing-image: "/assets/images/posts/ornament.gif"
 comments: true
 ---
 
-[![Ornament](/assets/images/posts/ornament.gif){: .bordered.landing-image.centered }](/assets/images/posts/ornament.gif)
+[![Ornament]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 In the object-oriented world, simple applications usually require small classes with static behaviors. Adding, modifying, and sharing those behaviors can be achieved by mixing in modules or inheriting from other classes at compile time. However, more complex applications might require a particular instance of a class to gain additional functionality at runtime. To modify the behavior of an object dynamically, we can utilize the [decorator](http://en.wikipedia.org/wiki/Decorator_pattern) design pattern.
 

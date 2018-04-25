@@ -2,6 +2,7 @@
 layout: post
 title:  "The Influential Qualities of my Favorite Teammates"
 date:   2018-02-28
+landing-image: "/assets/images/posts/coworkers.png"
 comments: true
 ---
 

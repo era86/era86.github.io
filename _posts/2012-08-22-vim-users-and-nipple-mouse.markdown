@@ -2,10 +2,11 @@
 layout: post
 title: Vi(m) Users and the Nipple Mouse
 date: 2012-08-22
+landing-image: "/assets/images/posts/thinkpad-trackpoint.jpg"
 comments: true
 ---
 
-[![Thinkpad Trackpoint](/assets/images/posts/thinkpad-trackpoint.jpg){: .bordered.landing-image.centered }](/assets/images/posts/thinkpad-trackpoint.jpg)
+[![Thinkpad Trackpoint]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 Every so often, someone asks me "why do you like using the little mouse nub over the touchpad?" Most people assume I'm some hipster who thinks touchpads are too mainstream and prefers the irony of using the input device of a 1970s IBM employee. In all honesty, the reason the nipple mouse is far superior over the touchpad is similar to why Vi(m) is superior to all other text editors (trollololol).
 

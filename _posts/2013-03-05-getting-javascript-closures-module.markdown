@@ -2,10 +2,11 @@
 layout: post
 title: Getting JavaScript Closures (The Module Pattern)
 date: 2013-03-05
+landing-image: "/assets/images/posts/mints.jpg"
 comments: true
 ---
 
-[![Mints](/assets/images/posts/mints.jpg){: .bordered.landing-image.centered }](/assets/images/posts/mints.jpg)
+[![Mints]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 JavaScript is an essential tool for any web developer. There is no denying the [rise in popularity](http://techcrunch.com/2012/09/12/javascript-tops-latest-programming-language-popularity-ranking-from-redmonk/) of the language. Since its inception, JavaScript has been used, abused, and misunderstood by many programmers. Classically trained developers (such as myself) often find it difficult to grasp programming in "the JavaScript way". When I first started learning JavaScript, a common concept I struggled with was the usage of [closures](https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Closures).
 

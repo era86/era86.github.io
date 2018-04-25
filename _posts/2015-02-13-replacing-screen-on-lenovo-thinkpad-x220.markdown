@@ -2,6 +2,7 @@
 layout: post
 title: Replacing the Screen on the Lenovo Thinkpad X220
 date: 2015-02-13
+landing-image: "/assets/images/posts/x220-diagram.png"
 comments: true
 ---
 

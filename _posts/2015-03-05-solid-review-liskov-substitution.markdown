@@ -2,6 +2,7 @@
 layout: post
 title: 'SOLID Review: Liskov Substitution Principle'
 date: 2015-03-05
+landing-image: "/assets/images/posts/duck.jpg"
 comments: true
 ---
 

@@ -2,10 +2,11 @@
 layout: post
 title: "To Thine Own Self Be True: A Social Network Experiment"
 date: 2012-12-24
+landing-image: "/assets/images/posts/like.png"
 comments: true
 ---
 
-[![Like](/assets/images/posts/like.png){: .bordered.landing-image.centered }](/assets/images/posts/like.png)
+[![Like]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 Several months ago, I completely removed myself from all my social media networks. It was sort of a personal experiment. I wanted to remember what it felt like before my "friends" and I were completely interconnected at any or all points of the day. How did I, personally, connect with people without likes and status updates? Would I miss sharing and viewing beach vacation photos and drunken adventures? I've since returned to my social networks, but here is some of what I've discovered while being off the social map.
 

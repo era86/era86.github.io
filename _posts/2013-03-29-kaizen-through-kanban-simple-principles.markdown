@@ -2,10 +2,11 @@
 layout: post
 title: 'Kaizen Through Kanban: Simple Principles, Great Benefits'
 date: 2013-03-29
+landing-image: "/assets/images/posts/sticky-notes.jpg"
 comments: true
 ---
 
-[![Sticky Notes](/assets/images/posts/sticky-notes.jpg){: .bordered.landing-image.centered }](/assets/images/posts/sticky-notes.jpg)
+[![Sticky Notes]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 I recently attended a small presentation titled "Personal Kanban" hosted by the [Seattle Software Craftsmanship](http://www.seattlesoftwarecraftsmanship.org/) group. The speaker was Jim Benson, who incidentally wrote a book titled [Personal Kanban](http://www.amazon.com/Personal-Kanban-Mapping-Navigating-ebook/dp/B004R1Q642).  The presentation focused on how we, as software craftsman, can use Kanban effectively to provide clarity in our work. We do this by prioritizing our development tasks in a backlog and tracking their progress all the way to completion.
 

@@ -2,10 +2,11 @@
 layout: post
 title: "Simple Password Encrypted Files w/ GnuPG"
 date: 2012-08-29
+landing-image: "/assets/images/posts/gnupg.png"
 comments: true
 ---
 
-[![GNUPG](/assets/images/posts/gnupg.png){: .bordered.landing-image.centered }](/assets/images/posts/gnupg.png)
+[![GNUPG]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 If you are sending files or documents with sensitive information (eg.  database credentials), you probably don't want to send it without making sure it is encrypted. In Linux and OSX, I use a tool called [GnuPG](http://www.gnupg.org/) to add password protection to files I want to share with other people. This is, by no means, the best way to send sensitive information to someone else, but it does provide a small layer of protection against an unintended recipient opening and reading the contents.
 

@@ -2,10 +2,11 @@
 layout: post
 title:  "Remapping CapsLock to Escape in Ubuntu 16.04"
 date:   2017-01-14
+landing-image: "/assets/images/posts/capslock.jpg"
 comments: true
 ---
 
-[![](/assets/images/posts/capslock.jpg){: .bordered.landing-image.centered }](/assets/images/posts/capslock.jpg)
+[![Capslock](/assets/images/posts/capslock.jpg){: .bordered.landing-image.centered }](/assets/images/posts/capslock.jpg)
 
 As a Vim user, I prefer to remap the `CapsLock` key on my keyboard to `Escape`. It makes it easier to switch between `insert` and `visual` mode without having to stretch my pinky all the way up to the top-left corner of the keyboard. It's a minor detail, but a hard one to live without!
 

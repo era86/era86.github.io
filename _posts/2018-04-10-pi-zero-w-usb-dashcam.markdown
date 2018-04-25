@@ -2,6 +2,7 @@
 layout: post
 title: "Building a Simple Raspberry Pi Dashcam"
 date: 2018-04-10
+landing-image: "/assets/images/posts/dashcam-landing.png"
 comments: true
 ---
 

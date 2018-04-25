@@ -2,10 +2,11 @@
 layout: post
 title: 'SOLID Review: Single Responsibility Principle'
 date: 2015-02-06
+landing-image: "/assets/images/posts/knife.jpg"
 comments: true
 ---
 
-[![Knife](/assets/images/posts/knife.jpg){: .bordered.landing-image.centered }](/assets/images/posts/knife.jpg)
+[![Knife]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
 
 *Note: This is part of a series of articles reviewing the [five SOLID Principles of object-oriented programming](http://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29).*
 

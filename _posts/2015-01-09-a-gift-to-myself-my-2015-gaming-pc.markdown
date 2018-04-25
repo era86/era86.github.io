@@ -2,6 +2,7 @@
 layout: post
 title: 'A Gift to Myself: My 2015 Gaming PC'
 date: 2015-01-09
+landing-image: "/assets/images/posts/overall-build.jpg"
 comments: true
 ---
 
