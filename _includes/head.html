@@ -10,31 +10,33 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   <link href="/assets/images/favicon.ico" rel="icon" type="image/x-icon">
 
-  <!-- for Google -->
-  <meta name="description" content="{% if page.content %}{{ page.content | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.url == "/" or page.url == "/about/" %}
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta name="twitter:description" content="{{ site.description }}" />
+  {% else %}
+    <meta name="description" content="{% if page.content %}{{ page.content | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:description" content="{% if page.content %}{{ page.content | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:description" content="{% if page.content %}{{ page.content | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
+  {% endif %}
+
   <meta name="keywords" content="{{ page.tags }}" />
 
   <meta name="author" content="Frederick Ancheta" />
   <meta name="copyright" content="ERA 2015" />
 
-  <!-- for Facebook -->          
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:type" content="article" />
   {% if page.landing-image %}
     <meta property="og:image" content="{{ site.url}}{{ page.landing-image }}" />
-  {% else %}
-    <meta property="og:image" content="{{ site.url}}/assets/images/me-sippin-coffee.jpg" />
-  {% endif %}
-  <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
-  <meta property="og:description" content="{% if page.content %}{{ page.content | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
-
-  <!-- for Twitter -->          
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta name="twitter:description" content="{% if page.content %}{{ page.content | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
-  {% if page.landing-image %}
     <meta name="twitter:image" content="{{ site.url}}{{ page.landing-image }}" />
   {% else %}
+    <meta property="og:image" content="{{ site.url}}/assets/images/me-sippin-coffee.jpg" />
     <meta name="twitter:image" content="{{ site.url}}/assets/images/me-sippin-coffee.jpg" />
   {% endif %}
+
+  <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 </head>
