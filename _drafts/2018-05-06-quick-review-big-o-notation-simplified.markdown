@@ -21,27 +21,76 @@ Big-O notation is a way to express an algorithm's complexity in terms of the siz
 Let's walk through a very basic example. Here's a simple search function:
 
 {% highlight python %}
-def linear_search(target, list):
-  for item in list:
+def linear_search(target, items):
+  for item in items:
     if target == item:
       return True
   return False
 {% endhighlight %}
 
-### Determine the Input Size `n`
+### Determine the Input Size
 
-The number of elements in `list` is our input size, `n`. As `list` grows, `n` grows.
+The number of elements in `items` is our input size, `n`. As `items` grows, `n` grows.
 
 ### Only Consider the Worst-Case Scenario
 
-If the first item in `list` is equal to `target`, then we complete in a single operation. This is the best-case scenario. We really only care about the worst-case scenario, which occurs when `target` doesn't exist in `list`.
+If the first item in `items` is equal to `target`, then the function exits in a only one operation. This is the best-case scenario. We really only care about the worst-case scenario, which occurs when `target` doesn't exist in `items` at all. In this situation, we end up iterating through the entire list.
 
 ### Express the Number of Operations as a Function
 
-We can determine how many operations we need to perform (in the worst case) as a function of `n`. Loops are often a big clue that we're iterating over the elements of our input. In this case, we have one loop.
+We can determine how many operations we need to perform (in the worst case) as a function of `n`. Since we know our worst case involves iterating the entire list, the Big-O complexity of our function is `O(n)`. In other words, if `items` has 10 items, we do 10 operations. If it has 1000 items, we do 1000 operations. And so on.
 
 ### Ignore the Small Stuff
 
-Loops are usually a big clue in determining the complexity of an algorithm. One loop usually means we'll operate on each item at least once. This means our code above has a Big-O complexity of `O(n)`. If `list` has 10 items, it will take (at most) 10 operations to complete. We say "at most", because when it comes to Big-O, we only care about the worst-case situation.
+Let's say we expanded a bit on our function:
 
-For our 
+{% highlight python %}
+def print_and_linear_search(target, items):
+  for item in items:
+    print item
+
+  for item in items:
+    if target == item:
+      return True
+  return False
+{% endhighlight %}
+
+Now, we have two loops in our function: one for printing and one for searching. This means our function now has `2n` operations in its worst case scenario. Since Big-O is an approximation on _arbitrarily large values of `n`_, we can drop less significant terms. So, we can stil express the complexty of our function as `O(n)`, even if it _really_ has `2n` operations.
+
+## Different Big-O Classifications
+
+Now that we have an understanding of Big-O analysis, we can look at some common classes of algorithm complexities.
+
+### `O(1)`
+
+This is known as "constant time" because the algorithm completes in the same amount of time no matter what the size of the input is. An example of this is pushing or popping from a stack:
+
+{% highlight python %}
+def push(item, items):
+  items[len(items):] = [x]
+
+def pop(items)
+  item = items[-1]
+  del items[-1]
+  return item
+{% endhighlight %}
+
+Regardless of how big `items` is, we still yield the same amount of operations.
+
+### `O(n)`
+
+This is known as "linear time" because the algorithm completes within one full iteration of the size of the input. We've already seen an example of this above in our `linear_search` function.
+
+As the input grows, the the number of operations grows _linearly_ with it.
+
+### `O(log(n))`
+
+Rather than iterating through an entire 
+
+### `O(nlog(n))`
+
+### <code>O(n<sup>2</sup>)</code>
+
+### <code>O(2<sup>n</sup>)</code>
+
+### `O(n!)`
