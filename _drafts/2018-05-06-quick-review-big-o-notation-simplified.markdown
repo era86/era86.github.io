@@ -85,7 +85,21 @@ As the input grows, the the number of operations grows _linearly_ with it.
 
 ### `O(log(n))`
 
-Rather than iterating through an entire 
+Let's take a step back and visit our searching algorithm from before. For the sake of this example, let's assume our input is a list of sorted items. With this assumption, we can drastically reduce the runtime complexity of our search:
+
+{% highlight python %}
+def binary_search(item, sorted_items):
+  mid = len(sorted_items) / 2
+
+  return True if sorted_items[mid] == item
+
+  if item < mid:
+    return binary_search(item, sorted_items[0, mid])
+  else:
+    return binary_search(item, sorted_items[mid, -1])
+{% endhighlight %}
+
+This approach is commonly known as "divide and conquer". Rather than looping through all items, divide-and-conquer algorithms halve the input size, recursively, at each step. This results in an algorithmic complexity resembling a logarithmic function, thus the Big-O complexity of `O(log(n))`.
 
 ### `O(nlog(n))`
 
