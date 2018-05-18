@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Quick Review: Big-O Notation Simplified"
+title:  "Quick Review: Big-O Notation"
 date:   2018-05-06
 landing-image: "/assets/images/posts/"
 comments: true
@@ -38,7 +38,7 @@ If the first item in `items` is equal to `target`, then the function exits in a 
 
 ### Express the Number of Operations as a Function
 
-We can determine how many operations we need to perform (in the worst case) as a function of `n`. Since we know our worst case involves iterating the entire list, the Big-O complexity of our function is `O(n)`. In other words, if `items` has 10 items, we do 10 operations. If it has 1000 items, we do 1000 operations. And so on.
+We can determine how many operations we need to perform (in the worst case) as a function of `n`. We know our worst case scenario involves iterating the entire list. So, the Big-O complexity of our function is `O(n)`. In other words, our algorithm completes in "linear time". If `items` has 10 items, we do 10 operations. If it has 1000 items, we do 1000 operations. And so on.
 
 ### Ignore the Small Stuff
 
@@ -77,12 +77,6 @@ def pop(items)
 
 Regardless of how big `items` is, we still yield the same amount of operations.
 
-### `O(n)`
-
-This is known as "linear time" because the algorithm completes within one full iteration of the size of the input. We've already seen an example of this above in our `linear_search` function.
-
-As the input grows, the the number of operations grows _linearly_ with it.
-
 ### `O(log(n))`
 
 Let's take a step back and visit our searching algorithm from before. For the sake of this example, let's assume our input is a list of sorted items. With this assumption, we can drastically reduce the runtime complexity of our search:
@@ -101,11 +95,13 @@ def binary_search(item, sorted_items):
   return False
 {% endhighlight %}
 
-This approach is commonly known as "divide and conquer". Rather than looping through all items, divide-and-conquer algorithms halve the input size, recursively, at each step. This results in an algorithmic complexity resembling a logarithmic function, thus the Big-O complexity of `O(log(n))`.
+This approach is commonly known as "divide and conquer". Rather than looping through all items, divide-and-conquer algorithms halve the input size, recursively, at each step.
+
+This results in an algorithmic complexity resembling a logarithmic function, thus the Big-O complexity of `O(log(n))`.
 
 ### `O(nlog(n))`
 
-A common problem in computer science is sorting. Some of the most efficient sorts involve some kind of iteration over all the items in a list and a divide-and-conquer strategy. An example of this is `mergesort`:
+Some algorithms involve some kind of divide-and-conquer strategy combined with the linear processing of all elements. This is very common in sorting algorithms. An example of this is `mergesort`:
 
 {% highlight python %}
 def merge_sort(items):
@@ -119,12 +115,31 @@ def merge_sort(items):
   return merge(array1, array2)
 
 def merge(array1, array2):
-  # Combine the two arrays:
-  #   - iterate each item in each of the arrays
-  #   - append the smaller of the two items from each array to a new array
-  #   - return the merged (sorted) array
+  new_array = []
+
+  i = j = 0
+  while i < len(array1) && j < len(array2):
+    if array1[i] < array2[j]:
+      new_array.append(array1[i])
+      i += 1
+    else:
+      new_array.append(array2[j])
+      j += 1
+
+  while i < len(array1):
+    new_array << array1[i]
+    i += 1
+  while j < len(array2):
+    new_array << array2[j]
+    j += 1
+
+  return new_array
 {% endhighlight %}
 
-Although I've left the `merge` function as a pseudo-description, we can still do some Big-O analysis on both. In `merge_sort`, the operations resemble a divide-and-conquer strategy. As we know from `binary_search`, this has a runtime complexity of `O(log(n))`. For the `merge` function, we'll use the combined lengths of `array1` and `array2` as the input size for our function. Based on the description of the algorithm, we end up iterating through both input arrays. This yields a runtime complexity of `O(n)`. If we combine both, we get a total runtime complexity of `O(nlog(n))`.
+In `merge_sort`, we implement our divide-and-conquer strategy. Like `binary_search`, this has a runtime complexity of `O(log(n))`. For the `merge` function, we use `array1` and `array2` as the input for our function. The "merging" occurs when we iterate over the arrays, pick the smaller of the two heads, and push them onto a new array. This results in a sorted array for us to return. This step yields a runtime complexity of `O(n)`.
+
+In the end, we get an overall runtime complexity of `O(nlog(n))`.
 
 ### <code>O(n<sup>2</sup>)</code>
+
+
