@@ -57,11 +57,11 @@ def print_and_linear_search(target, items):
 
 Now, we have two loops in our function: one for printing and one for searching. This means our function now has `2n` operations in its worst case scenario. Since Big-O is an approximation on _arbitrarily large values of `n`_, we can drop less significant terms. So, we can stil express the complexty of our function as `O(n)`, even if it _really_ has `2n` operations.
 
-## Different Big-O Classifications
+## Other Common Big-O Classifications
 
 Now that we have an understanding of Big-O analysis, we can look at some common classes of algorithm complexities.
 
-### `O(1)`
+### O(1)
 
 This is known as "constant time" because the algorithm completes in the same amount of time no matter what the size of the input is. An example of this is pushing or popping from a stack:
 
@@ -77,7 +77,7 @@ def pop(items)
 
 Regardless of how big `items` is, we still yield the same amount of operations.
 
-### `O(log(n))`
+### O(log(n))
 
 Let's take a step back and visit our searching algorithm from before. For the sake of this example, let's assume our input is a list of sorted items. With this assumption, we can drastically reduce the runtime complexity of our search:
 
@@ -99,7 +99,7 @@ This approach is commonly known as "divide and conquer". Rather than looping thr
 
 This results in an algorithmic complexity resembling a logarithmic function, thus the Big-O complexity of `O(log(n))`.
 
-### `O(nlog(n))`
+### O(nlog(n))
 
 Some algorithms involve some kind of divide-and-conquer strategy combined with the linear processing of all elements. This is very common in sorting algorithms. An example of this is `mergesort`:
 
@@ -140,6 +140,32 @@ In `merge_sort`, we implement our divide-and-conquer strategy. Like `binary_sear
 
 In the end, we get an overall runtime complexity of `O(nlog(n))`.
 
-### <code>O(n<sup>2</sup>)</code>
+### O(n<sup>x</sup>)
 
+A big clue to determining algorithms with <code>O(n<sup>x</sup>)</code> complexity is nested loops over the input. We say these algorithms complete in "polynomial time". Inefficient sorting algorithms often fit this classification:
 
+{% highlight python %}
+def bubble_sort(items):
+  i = 0
+  while i < len(items):
+    j = 0
+    while j < len(items):
+      if items[i] <= items[j]:
+        tmp = items[i]
+        items[i] = items[j]
+        items[j] = tmp
+      j += 1
+    i += 1
+{% endhighlight %}
+
+In `bubble_sort`, we have an outer loop that goes through each item in `items`. For each item, we make another iteration over `items`, swapping elements according to their sorting-value. In each iteration, each item gets "bubbled up" to their correct position in the array. Since there is one nested loop in this function, we get a total of `n * n` operations. This means the Big-O copmlexity of `bubble_sort` is `O(n * n)`, or <code>O(n<sup>2</sup>)</code>.
+
+## Visualizing Big-O
+
+We can easily see a comparison of different Big-O complexities by graphing them:
+
+[![](/assets/images/posts/){: .centered }](/assets/images/posts/)
+
+As we can see, the most efficient algorithms are logarithmic, whereas some of the most inefficient algorithms are polynomial.
+
+## Conclusion
