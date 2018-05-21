@@ -48,7 +48,9 @@ Big-O notation is an approximation on large values of `n`. This means as `n` get
 
 For example:
 
-<code>O(23n<sup>2</sup> + 45n + 100000)</code> is <code>O(n<sup>2</sup>)</code>
+<code>O(23n<sup>2</sup> + 45n + 100000)</code>
+is reduced to
+<code>O(n<sup>2</sup>)</code>
 
 ## Common Big-O Classes
 
