@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Quick Review: Big-O Notation"
-date:   2018-05-06
-landing-image: "/assets/images/posts/"
+date:   2018-05-22
+landing-image: "/assets/images/posts/math-kid.png"
 comments: true
 ---
 
-[![](/assets/images/posts/){: .landing-image.centered }](/assets/images/posts/)
+[![Big-O Notation](/assets/images/posts/math-kid.png){: .landing-image.centered }](/assets/images/posts/math-kid.png)
 
 As a web developer, I very rarely find myself deeply analyzing algorithms. However, a basic understanding of Big-O analysis can be really useful for software engineers. It provides a common language for us to discuss the performance of our code and the potential ways we can improve it.
 
@@ -160,7 +160,7 @@ If it can be helped, we should strive to write functions with complexities `O(nl
 
 ## Conclusion
 
-Obviously, this is a very basic explanation for Big-O notation. There's much more math involved in proving these concepts. Here are some great resources for learning more about Big-O notation and analysis:
+Obviously, this is a very basic explanation for Big-O notation. There's much more math involved in describing and proving these concepts. Here are some great resources for learning more about Big-O notation and analysis:
 
 * [Big O Notation](https://www.interviewcake.com/article/java/big-o-notation-time-and-space-complexity) by Interview Cake
 * [Big-O notation explained by a self-taught programmer](https://justin.abrah.ms/computer-science/big-o-notation-explained.html) by Justin Abrahms
