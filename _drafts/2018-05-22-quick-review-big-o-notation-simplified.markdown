@@ -28,7 +28,7 @@ def linear_search(target, items):
   return False
 {% endhighlight %}
 
-Let's walk through the steps for determining this function's Big-O complexity. 
+Let's walk through the steps for determining this function's Big-O complexity:
 
 ### Determine the Input Size
 
