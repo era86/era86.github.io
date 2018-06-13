@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Natural TrackPoint Scrolling on ThinkPad in Ubuntu 16.04"
-date:   2018-06-11
+date:   2018-06-13
 landing-image: "/assets/images/posts/trackpoint-scrolling.png"
 comments: true
 ---
