@@ -18,6 +18,8 @@ First, we find the property we need to modify. We do this by doing:
 xinput list-props "TPPS/2 IBM TrackPoint"
 {% endhighlight %}
 
+_Edit (Aug 5, 2018)_: After an update, I noticed the name of this property has changed to `"TPPS/2 Elan TrackPoint"`. The instructions remain the same, but replace `"IBM"` with `"Elan"`.
+
 In the output, there should be an entry for wheel-emulation:
 
 {% highlight bash %}
