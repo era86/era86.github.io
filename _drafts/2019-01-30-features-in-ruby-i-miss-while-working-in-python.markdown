@@ -10,31 +10,9 @@ comments: true
 
 For about six years, I worked primarily on the Ruby on Rails stack. For me, [Ruby](https://www.ruby-lang.org/en/) was (and still is) a great language for learning programming concepts like test-driven development and object-oriented design patterns. Its syntax is "human-friendly" and great for beginners to read and understand.
 
-Recently, I've moved back over to [Python](https://www.python.org/) and Django. Python is a much more direct programming language than Ruby. It emphasizes simplicity, making everything as obvious and explicit to the programmer, even if it's verbose.
+Recently, I moved back over to [Python](https://www.python.org/) and Django. Python is a much more _direct_ programming language than Ruby. It emphasizes simplicity, making everything as obvious and explicit to the programmer, even if it's verbose.
 
-Both Ruby and Python, though different in their philosophies, are a joy for programming! Both are easy to learn and enable software developers to be productive very quickly. However, there are some features of Ruby I miss while working in Python. These are just a few I thought I'd share.
-
-## In-line variable string interpolation
-
-### Python:
-
-Interpolating variables in Python can be achieved with [`str.format()`](https://realpython.com/python-string-formatting/#2-new-style-string-formatting-strformat).
-
-{% highlight python %}
-"Hello, {}! Welcome to {}.".format(employee_name, company_name)
-{% endhighlight %}
-
-### Ruby:
-
-[String interpolation in Ruby](https://www.digitalocean.com/community/tutorials/how-to-work-with-strings-in-ruby#using-string-interpolation) is similar, but Ruby has the advantage of interpolating variables _in-place_.
-
-{% highlight ruby %}
-"Hello, #{employee_name}! Welcome to #{company_name}."
-{% endhighlight %}
-
-It's a subtle difference, but it makes for a better reading experience.
-
-_Note: Those who are fortunate enough to be using Python 3.6+ can get a similar experience with [`f`-strings](https://realpython.com/python-string-formatting/#3-string-interpolation-f-strings-python-36)!_
+Both Ruby and Python, though different in their philosophies, are a joy for programming! They're easy to learn and enable software developers to be productive very quickly. However, there are some features of Ruby I miss while working in Python. These are just a few I thought I'd share.
 
 ## Functional approach to working with lists/arrays
 
@@ -113,15 +91,15 @@ Building abstractions and sharing them across classes is a common way to keep co
 In Python, integrating existing behaviors from more than one abstraction is commonly achieved with [multiple inheritance](https://www.programiz.com/python-programming/multiple-inheritance).
 
 {% highlight python %}
-class AddMixin:
+class Adder:
     def add(self, x, y):
         return x + y
 
-class MultiplyMixin:
+class Multiplier:
     def multiply(self, x, y):
         return x * y
 
-class Calculator(AddMixin, MultiplyMixin):
+class Calculator(Adder, Multiplier):
     pass
 
 c = Calculator()
@@ -157,6 +135,28 @@ p c.multiply(2, 2) # 4
 {% endhighlight %}
 
 In Ruby, modules are "mixed in" with classes, making objects "act like" the desired abstractions. In Python, classes are "inherited", making objects "become" the desired abstractions. Creating and sharing modules for the purpose of encapsulating behaviors feels cleaner than creating classes to achieve the same thing.
+
+## In-line variable string interpolation
+
+### Python:
+
+Interpolating variables in Python can be achieved with [`str.format()`](https://realpython.com/python-string-formatting/#2-new-style-string-formatting-strformat).
+
+{% highlight python %}
+"Hello, {}! Welcome to {}.".format(employee_name, company_name)
+{% endhighlight %}
+
+### Ruby:
+
+[String interpolation in Ruby](https://www.digitalocean.com/community/tutorials/how-to-work-with-strings-in-ruby#using-string-interpolation) is similar, but Ruby has the advantage of interpolating variables _in-place_.
+
+{% highlight ruby %}
+"Hello, #{employee_name}! Welcome to #{company_name}."
+{% endhighlight %}
+
+It's a subtle difference, but it makes for a better reading experience.
+
+_Note: Those who are fortunate enough to be using Python 3.6+ can get a similar experience with [`f`-strings](https://realpython.com/python-string-formatting/#3-string-interpolation-f-strings-python-36)!_
 
 ## Conclusion
 
