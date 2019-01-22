@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Features in Ruby I Miss While Working in Python"
-date:   2019-01-30
+date:   2019-01-22
 landing-image: "/assets/images/posts/ruby-python-logo.png"
 comments: true
 ---
@@ -41,11 +41,11 @@ Ruby also has [many built-in methods](https://ruby-doc.org/core-2.6/Enumerable.h
 
 ## Explicit private methods
 
-[Encapsulation](https://stackify.com/oop-concept-for-beginners-what-is-encapsulation/) is an important concept in object-oriented programming. Defining and enforcing private methods lets programmers declare the intended interface for any particular class.
+[Encapsulation](https://stackify.com/oop-concept-for-beginners-what-is-encapsulation/) is an important concept in object-oriented programming. The ability to define and enforce private methods lets programmers declare the intended interface for any particular class.
 
 ### Python:
 
-There are [philosophical reasons](https://mail.python.org/pipermail/tutor/2003-October/025932.html) for Python's lack of private methods. However, a similar effect can be achieved by using a Python concept called [name mangling](https://docs.python.org/3.5/tutorial/classes.html#private-variables). Just prefix "private" methods with double-underscores.
+There are [philosophical reasons](https://mail.python.org/pipermail/tutor/2003-October/025932.html) for Python's lack of private methods. However, a similar effect can be achieved using a Python concept called [name mangling](https://docs.python.org/3.5/tutorial/classes.html#private-variables). Just prefix "private" methods with double-underscores.
 
 {% highlight python %}
 class MyClass:
@@ -80,7 +80,7 @@ MyClass.new.not_allowed
 # '<main>': private method `not_allowed' called for #<MyClass:0x000056424b2346f8> (NoMethodError)
 {% endhighlight %}
 
-Although the same effect can be achieved in both languages, I prefer Ruby's explicit keyword over Python's naming convention.
+Although the functionality is somewhat the same, I prefer Ruby's explicit `private` keyword over Python's naming convention.
 
 ## Modules and mix-ins for abstracting functionality
 
@@ -88,7 +88,7 @@ Building abstractions and sharing them across classes is a common way to keep co
 
 ### Python:
 
-In Python, integrating existing behaviors from more than one abstraction is commonly achieved with [multiple inheritance](https://www.programiz.com/python-programming/multiple-inheritance).
+In Python, integrating cohesive logic from more than one abstraction is commonly achieved with [multiple inheritance](https://www.programiz.com/python-programming/multiple-inheritance).
 
 {% highlight python %}
 class Adder:
@@ -109,7 +109,7 @@ print c.multiply(2, 2) # 4
 
 ### Ruby:
 
-Ruby doesn't support multiple inheritence. However, it accomplishes similar behavior by implementing a mechanism called [mix-ins](https://www.tutorialspoint.com/ruby/ruby_modules.htm).
+Ruby doesn't support multiple inheritence. However, it accomplishes this behavior by implementing a mechanism called [mix-ins](https://www.tutorialspoint.com/ruby/ruby_modules.htm).
 
 {% highlight ruby %}
 module Addable
@@ -134,7 +134,7 @@ p c.add(1, 1) # 2
 p c.multiply(2, 2) # 4
 {% endhighlight %}
 
-In Ruby, modules are "mixed in" with classes, making objects "act like" the desired abstractions. In Python, classes are "inherited", making objects "become" the desired abstractions. Creating and sharing modules for the purpose of encapsulating behaviors feels cleaner than creating classes to achieve the same thing.
+In Ruby, modules are "mixed in" with classes, making objects "act like" the desired abstractions. In Python, classes are "inherited", making objects "become" the desired abstractions. Creating and sharing modules for the purpose of encapsulating _behavior_ feels cleaner and more semantic than creating classes.
 
 ## In-line variable string interpolation
 
