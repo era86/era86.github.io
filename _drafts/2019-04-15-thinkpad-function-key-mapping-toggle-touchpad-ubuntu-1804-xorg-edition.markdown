@@ -14,7 +14,7 @@ The instructions worked for awhile, but differences between [Wayland and Xorg](h
 
 Here are updated instructions for getting a function-key to toggle the touchpad in Ubuntu 18.04 for Xorg!
 
-### Find event device for controlling function-keys
+### Find the event device for function-keys
 
 First, we need to find out the device that handles the function-keys on the ThinkPad keyboard. On my system, it's called `"ThinkPad Extra Buttons"`.
 
@@ -30,7 +30,7 @@ H: Handlers=rfkill kbd event6
 
 Take note of `event6`. It'll be used in the next section.
 
-### Find the scancode for the function-key
+### Find the scancode for a function-key
 
 In order to remap our function-key, we'll need its [**scancode**](https://en.wikipedia.org/wiki/Scancode). This is a signal the keyboard sends to the computer indicating it has been pressed.
 
@@ -57,7 +57,7 @@ Event: time 1555302565.097517, -------------- SYN_REPORT ------------
 
 Take note of the `value 49`. This is the scancode!
 
-### Create an `hwdb` mapping for the key
+### Create a custom `hwdb` keyboard mapping
 
 _Note: It might be worth some time to read up about [`hwdb`](https://www.freedesktop.org/software/systemd/man/hwdb.html)._
 
@@ -72,11 +72,7 @@ The first line is a match-string for our device, `"Thinkpad Extra Buttons"`. The
 
 _Note: I found my device match-string and "toggle touchpad" keycode in `/lib/udev/hwdb.d/60-keyboard.hwdb`._
 
-After saving the new file, update `hwdb` with:
-
-{% highlight bash %}
-sudo udevadm hwdb --update
-{% endhighlight %}
+After saving the new file, run `sudo udevadm hwdb --update`.
 
 Finally, restart the system and log back in. If things are set up properly, the function-key should toggle the touchpad!
 
