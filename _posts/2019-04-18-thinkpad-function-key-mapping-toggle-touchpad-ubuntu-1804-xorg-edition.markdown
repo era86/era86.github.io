@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ThinkPad Function-Key Mapping to Toggle Touchpad in Ubuntu 18.04 (Xorg Edition)"
-date:   2019-04-15
+date:   2019-04-18
 landing-image: "/assets/images/posts/thinkpad-x1-touchpad.png"
 comments: true
 ---
