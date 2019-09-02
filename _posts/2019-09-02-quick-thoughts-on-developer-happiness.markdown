@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Quick Thoughts on Developer Happiness"
-date:   2019-07-08
+date:   2019-09-02
 landing-image: "/assets/images/posts/burnout.png"
 comments: true
 ---
