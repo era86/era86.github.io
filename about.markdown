@@ -12,4 +12,4 @@ I'm a web developer from Seattle who enjoys creating, breaking, and fixing web a
 
 If I'm not at at the office, I'm probably at the gym attempting to lift heavy things, working on a side project (aka browsing Reddit), or exploring the great Pacific Northwest.
 
-If you'd like to get in contact with me, you can find me on [Twitter](http://www.twitter.com/chedda86) or drop me an [email](mailto:ancheta86@gmail.com).
+If you'd like to get in contact with me, you can find me on [Twitter](http://www.twitter.com/chedda86), [LinkedIn](https://www.linkedin.com/in/era86/), or drop me an [email](mailto:ancheta86@gmail.com).
