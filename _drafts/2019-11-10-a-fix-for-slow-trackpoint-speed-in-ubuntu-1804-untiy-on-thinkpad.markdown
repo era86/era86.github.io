@@ -1,34 +1,51 @@
 ---
 layout: post
 title:  "Quick Thoughts on the Value of Junior Engineers"
-date:   2020-01-20
+date:   2020-02-20
 landing-image: "/assets/images/posts/thinkpad-x1-slow-tackpoint.png"
 comments: true
 ---
 
-[![ThinkPad X1 TrackPoint]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
+[![]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
+
+This year will be my eleventh year working as a professional software engineer.
+Time flies! I've worked with many engineers, all with varying levels of
+experience ranging from fresh college graduates to seasoned veterans. Early in
+my career, I made it a goal to surround myself with engineers who were
+[_"better"_]() than me. And by _better_, I mean _more experienced_. I find it's
+one of the best ways to grow as a software engineer.
+
+However, as I embark on my second decade of working in the software industry,
+I'm finding myself more in the "senior" role rather than the "junior" role. And
+with this shift in position, I'm realizing **there's a lot to gain from
+surrounding yourself with _less_ experienced "junior" engineers**.
+
+Here are some of the reasons I've come to value working with junior engineers!
 
 ## They encourage teams to improve (or create) an onboarding process
 
-Onboarding is the process of getting a new engineer up and working _quickly_.
-This includes setting up the local development environment and installing tools
-like Slack or Github. The main goal is to get the engineer prepared to do work
-as soon as possible.
+Onboarding is the process of getting a new employee ramped up and ready to work
+as soon as possible. For software engineers, this includes setting up the local
+development environment or installing an IDE. The main goal is to get the
+engineer set up to do his or her job.
 
 The lack of proper onboarding becomes very apparent when a junior engineer joins
-the team, as he/she usually needs more guidance than experienced engineers. For
-example, if step-by-step documentation isn't detailed enough, a new engineer may
-flounder trying to follow along. On the other hand, if documentation is _too_
-verbose, it may make the engineer feel like he/she is drinking from a firehose.
+the team. A bit more guidance is generally required in the case of someone who
+hasn't worked with any of the standard tools or processes in the industry.
 
-This is also be a good time to introduce automation with scripts or tools like
-Docker. Although it may hide some of the finer details about the environment
-from a junior engineer, it can reduce the amount of boilerplate required to get
-started with the important parts, like code.
+For example, if step-by-step Wiki docs aren't detailed enough, a new engineer
+might struggle to follow them. On the other hand, if the docs are entire walls
+of text, it may make the engineer feel like he or she is drinking from a
+firehose!
+
+If the technology stack is complex enough, it might be beneficial to use local
+build automation tools like Docker or Vagrant to speed up the process. Sure, 
+this type of automation hides some of the finer details about the development
+environment from a junior engineer, but it will reduce the amount of time to
+get it up and running.
 
 Regardless of the team's approach to onboarding, the fresh eyes of a junior
-engineer are very useful in improving the overall process.
-
+engineer are very useful in improving the overall process!
 
 ## They force senior engineers to revisit software engineering fundamentals
 
@@ -57,9 +74,12 @@ mentorship skills while staying fresh in key concepts themselves.
 
 ## They re-ignite the excitement to grow and learn
 
-- working in software long enough, the job wears and tears
-  - same old code, same old stack
-  - same old processes
-- teaching someone software engineering fundamentals allows us to revisit our younger/former selves
-- their eagerness and willingness to learn reminds us what it was like to come in with bright eyes and open minds
-- it's inspirational, motivating us to continue learning and growing
+After working in the tech industry for an extended period of time, the aches and
+pains start to have wear and tear. Every sprint, you're sifting through the same
+old codebase, deploying to the same old stack, etc.
+
+When a junior engineer joins the team, they look at the same codebase and same
+tech stack, but with bright eyes and an eager willingness to learn. Watching
+someone grow and learn with such enthusiasm is inspiring and contagious. 
+
+
