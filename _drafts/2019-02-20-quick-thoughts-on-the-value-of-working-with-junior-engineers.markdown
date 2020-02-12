@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Quick Thoughts on the Value of Working with Junior Engineers"
+title:  "Quick Thoughts on Working with Junior Engineers"
 date:   2020-02-20
 landing-image: "/assets/images/posts/pair.jpg"
 comments: true
@@ -22,7 +22,7 @@ Regardless of the approach, **the fresh eyes of a junior engineer are useful for
 
 ## They force senior engineers to revisit software engineering fundamentals
 
-After working a long enough time in software, an engineer learns some basic fundamentals. These might be programming paradigms (ex. [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming)), engineering principles (ex. [KISS](https://en.wikipedia.org/wiki/KISS_principle)), or development methodoligies (ex. [Agile](https://en.wikipedia.org/wiki/Agile_software_development)). While some of these are learned in classrooms and bootcamps, much of it is learned in the industry.
+After working a long enough time in software, an engineer learns some basic fundamentals. These might be programming paradigms (ex. [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming)), engineering principles (ex. [KISS](https://en.wikipedia.org/wiki/KISS_principle)), or development methodologies (ex. [Agile](https://en.wikipedia.org/wiki/Agile_software_development)). While some of these are learned in classrooms and bootcamps, much of it is learned in the industry.
 
 New engineers coming in with no professional experience are expected to learn the fundamentals from senior team members. **Experienced engineers must be able to answer the _why_ in addition to the _what_**, and junior engineers ask plenty of _whys_. For example, it's not sufficient to explain _what_ [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) means, but _why_ it's important for maintaining large software applications.
 
@@ -32,13 +32,13 @@ If senior engineers find themselves stumped by _why_-questions, it might be a go
 
 Some engineers pride themselves in cramming complexity into as few expressions as possible. However, it's been said time and again: _clear_ code is better than _clever_ code.
 
-Turns out, junior engineers are great at pointing out when code is too hard to read. After all, they haven't picked up clever tricks or hacks (yet). Sure, certain design patterns and language-specific techniques can be justified, but **if a junior engineer has a hard time comprehending some code, it might be worth thinking about how it could be written in a more understandable way**.
+Turns out, junior engineers are great at pointing out when code is too hard to read. After all, they haven't picked up clever tricks or hacks (yet). Sure, certain design patterns and language-specific techniques can be justified, but if a junior engineer has a hard time comprehending some code, **it might be worth thinking about refactoring it to be more understandable**.
 
 ## They re-ignite the excitement to grow, learn, and explore
 
 The day-to-day life of a tenured software engineer gets a bit mundane after awhile. Monoliths _always_ need breaking up, technical debt _always_ needs to be paid, and regressions _always_ break production. Pulling tickets, writing code, and deploying every day can get repetitive, and engineers can grow a bit jaded.
 
-However, junior engineers are _excited_ to participate in this "mundane" job. And this excitement, no matter how blindly optimistic it might sometimes be, is _contagious_. Their enthusiasm to learn and grow in their craft is inspiring. It's a much-needed reminder for battle-weary engineers just how geat software development can be.
+However, junior engineers are _excited_ to participate in this "mundane" job. And this **excitement, no matter how blindly optimistic it might sometimes be, is _contagious_**. Their enthusiasm to learn and grow in their craft is inspiring. It's a much-needed reminder for battle-weary engineers just how great software development can be.
 
 > "I want to be who I was when I wanted to become who I am now."
 
