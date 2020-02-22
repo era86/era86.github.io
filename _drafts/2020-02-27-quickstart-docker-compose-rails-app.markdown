@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rails on Ubuntu 18.04 with Docker and Docker Compose"
+title:  "Rails Development Environment with Docker Compose in Ubuntu 18.04"
 date:   2020-02-27
 landing-image: "/assets/images/posts/pair.jpg"
 comments: true
@@ -20,13 +20,11 @@ Alternatively, we can install the latest Docker engine by following [these instr
 
 ### Allow current user to run Docker commands
 
-The `docker` command can only be run by `root`. To avoid having to type `sudo docker` all the time, add the current user to the `docker` group:
+On Ubuntu, the `docker` command can only be run by `root`. To avoid having to type `sudo docker` all the time, add the current user to the `docker` group:
 
 {% highlight bash %}
 sudo usermod -aG docker ${USER}
 {% endhighlight %}
-
-After logging out and logging back in, `docker` should work without `sudo`.
 
 ### Install Docker Compose
 
@@ -38,7 +36,7 @@ sudo apt-get install -y docker-compose
 
 Alternatively, we can install the latest Docker Compose by following [these instructions](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04).
 
-After installation, it's best to restart the system.
+After installing Docker and Docker Compose, it's best to restart the system.
 
 ### Create root folder for the project
 
@@ -56,7 +54,7 @@ We create a new folder for our Rails application _within_ `project`:
 mkdir project/web/
 {% endhighlight %}
 
-The Rails application is in its own folder to keep the `project` folder framework-agnostic. In the future, we can add other applications to the project as needed.
+The Rails application is in its own folder to keep the `project` folder framework-agnostic, in case there are other applications we want to add in the future.
 
 ### Create Dockerfile
 
@@ -78,7 +76,7 @@ RUN bundle install
 COPY . /app
 {% endhighlight %}
 
-This tells Docker how to build the container. For more information on the commands used within the `Dockerfile`, see the [offical reference](https://docs.docker.com/v17.09/engine/reference/builder/).
+This tells Docker how to build the container. For a deeper dive on `Dockerfile`, see the [offical reference](https://docs.docker.com/v17.09/engine/reference/builder/).
 
 ### Create initial Gemfile and Gemfile.lock
 
@@ -95,7 +93,7 @@ This file _initially_ tells the container to install Rails using a tool called [
 touch Gemfile.lock
 {% endhighlight %}
 
-For more information on `Gemfile` and `Gemfile.lock`, see the [official reference](https://bundler.io/gemfile.html).
+For a deeper dive on `Gemfile` and `Gemfile.lock`, see the [official reference](https://bundler.io/gemfile.html).
 
 ### Create docker-compose.yml
 
@@ -105,17 +103,17 @@ Within `project/`, create a file named `docker-compose.yml`:
 version: '3'
 services:
   web:
-    build: .
-    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    build: ./web
+    command: bundle exec puma -C config/puma.rb
     volumes:
-      - .:/app
+      - ./web:/app
     ports:
       - "3000:3000"
 {% endhighlight %}
 
-This YAML file tells Docker Compose how to build our containers. Currently, there's only one: `web`. However, we can add more in the future by creating their entries in this file (ex. PostgreSQL container, React frontend container).
+This YAML file tells Docker Compose how to build our containers. Currently, there's only one: `web`. However, we can add more in the future by creating entries in this file (ex. PostgreSQL container, React frontend container).
 
-For more information on the structure of `docker-compose.yml`, see the [official reference](https://docs.docker.com/compose/compose-file/).
+For a deeper dive on `docker-compose.yml`, see the [official reference](https://docs.docker.com/compose/compose-file/).
 
 ### Create new Rails application by running commands within the container
 
@@ -125,13 +123,21 @@ With all the proper files in place, create a new Rails application within the `w
 docker-compose run web bundle exec rails new . --force
 {% endhighlight %}
 
-This builds the `web` container and runs `bundle exec rails new . --force` within it, creating a new Rails application within the `web` directory.
+This builds the container defined in `docker-compose.yml` and runs `bundle exec rails new . --force` within it, creating a new Rails application in the `web` directory.
 
 _Note: this overwrites the existing `Gemfile` with the necessary dependencies for Rails._
 
+### Reinstall Rails-specific Gems within the container
+
+Since the original `Gemfile` was overwritten, the container needs to install the new gems. This can be done by rebuilding the `web` container:
+
+{% highlight bash %}
+docker-compose up -d --no-deps --build web
+{% endhighlight %}
+
 ### Change ownership of Rails project files to current user
 
-Because containers are run as `root` in Ubuntu, the files created by `rails new` are _owned_ by `root`. To avoid permission issues, change the owner of the files to the current user:
+Because containers are run as `root` in Ubuntu, the files created by `rails new` are _owned_ by `root`. To allow local editing of the Rails application files, change the owner of the files to the current user:
 
 {% highlight bash %}
 sudo chown -R $USER:$USER .
@@ -139,8 +145,12 @@ sudo chown -R $USER:$USER .
 
 ### Run the local Rails development server
 
+Finally, start the container:
+
 {% highlight bash %}
 docker-compose up
 {% endhighlight %}
 
+And visit [`http://localhost:3000`](http://localhost:3000). The default Rails homepage should show up:
 
+[![](/assets/images/posts/blogger-post-editor.png){: .bordered }](/assets/images/posts/blogger-post-editor.png)
