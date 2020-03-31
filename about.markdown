@@ -8,7 +8,7 @@ permalink: /about/
 
 Greetings!
 
-I'm a web developer from Seattle who enjoys creating, breaking, and fixing web applications. I love the internet and the technologies built around it. I currently work at [Rover](https://www.rover.com/) as a full-stack software engineer. 
+I'm a web developer from Seattle who enjoys creating, breaking, and fixing web applications. I love the internet and the technologies built around it.
 
 If I'm not at at the office, I'm probably at the gym attempting to lift heavy things, working on a side project (aka browsing Reddit), or exploring the great Pacific Northwest.
 
