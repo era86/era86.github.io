@@ -2,11 +2,11 @@
 layout: post
 title: "Quick Tips for adding a REST API to a Rails Application"
 date: 2020-11-30
-landing-image: "/assets/images/posts/something.png"
+landing-image: "/assets/images/posts/api.png"
 comments: true
 ---
 
-[![]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
+[![API by Eucalyp]({{ page.landing-image }}){: .landing-image.centered }]({{ page.landing-image }})
 
 Rails projects typically start out as simple HTML pages and forms operating on a database, but evolve into more complex applications over time. In order to add a client-side framework or mobile application, creating a [REST API](https://restfulapi.net/) might be necessary.
 
@@ -163,3 +163,5 @@ This tip isn't specific controllers. In fact, service objects can be beneficial 
 Before adding a new REST API to an existing Rails project, keep these tips in mind. They aren't hard and fast rules, but they might make development easier in the future.
 
 Questions? Comments? Critiques? Leave me a comment below!
+
+Landing image by [Eucalyp](https://www.flaticon.com/authors/eucalyp) from [Flaticon](https://www.flaticon.com)
