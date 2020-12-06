@@ -2,11 +2,11 @@
 layout: post
 title: "Treat New Engineers to a Day-One Production Deploy"
 date: 2020-12-11
-landing-image: "/assets/images/posts/something.png"
+landing-image: "/assets/images/posts/rocket-launch.png"
 comments: true
 ---
 
-[![]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
+[![Rocket Launch]({{ page.landing-image }}){: .landing-image.centered }]({{ page.landing-image }})
 
 Every great engineering team has a process for onboarding new team members. The goal is to get the new hire set up and productive as soon as possible.
 
