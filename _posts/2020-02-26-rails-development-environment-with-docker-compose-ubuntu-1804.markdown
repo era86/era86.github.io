@@ -6,7 +6,7 @@ landing-image: "/assets/images/posts/docker-rails.png"
 comments: true
 ---
 
-[![Docker Rails]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
+[![Docker Rails]({{ page.landing-image }}){: .landing-image.centered }]({{ page.landing-image }})
 
 A long time ago, doing local web development was as simple as installing a framework and all its dependencies on my laptop. Now, I keep my development environments isolated from my local machine using containers via [Docker](https://www.docker.com/). In the case where I need _multiple_ services, I "orchestrate" the tech stack using [Docker Compose](https://docs.docker.com/compose/). By using these tools, local web development is now easy _and_ self-contained.
 

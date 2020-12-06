@@ -6,7 +6,7 @@ landing-image: "/assets/images/posts/nom-shot.png"
 comments: true
 ---
 
-[![NomTracker]({{ page.landing-image }}){: .bordered.landing-image.centered }](https://nomtracker.herokuapp.com/)
+[![NomTracker]({{ page.landing-image }}){: .landing-image.centered }](https://nomtracker.herokuapp.com/)
 
 It's been awhile since I started and actually _deployed_ a side project! Meet, [NomTracker](https://nomtracker.herokuapp.com/), a stripped-down clone of [MyFitnessPal](https://www.myfitnesspal.com/). For the past two weeks, this has occupied some of my free time (of which I have more of nowadays). It was fun to learn and relearn all of the steps required to go from nothing to website, a much-needed refresher!
 

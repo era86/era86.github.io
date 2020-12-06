@@ -6,7 +6,7 @@ landing-image: "/assets/images/posts/wood-cubes.jpg"
 comments: true
 ---
 
-[![]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
+[![]({{ page.landing-image }}){: .landing-image.centered }]({{ page.landing-image }})
 
 In object-oriented programming, classes are how we define objects and specify their data attributes. Sometimes, we want to create objects with attributes "on the fly", without having go through the boilerplate of defining a new [class](https://en.wikipedia.org/wiki/Class_(computer_programming)). For example, creating [mock objects](https://en.wikipedia.org/wiki/Mock_object) in tests.
 

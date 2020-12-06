@@ -6,7 +6,7 @@ landing-image: "/assets/images/posts/howmuchadobo-logo.png"
 comments: true
 ---
 
-[![How Much Adobo?]({{ page.landing-image }}){: .bordered.landing-image.centered }](https://www.howmuchadobo.com)
+[![How Much Adobo?]({{ page.landing-image }}){: .landing-image.centered }](https://www.howmuchadobo.com)
 
 Spent more time working on another random project this month! Meet [How Much Adobo?](https://www.howmuchadobo.com), an online meal-generator that tells you how much chicken adobo and rice you should eat to meet your calorie goals! Sure, it's esoteric, but it was a fun way to work with some new technologies I haven't had the pleasure of working with.
 

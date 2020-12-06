@@ -6,7 +6,7 @@ landing-image: "/assets/images/posts/pair.jpg"
 comments: true
 ---
 
-[![Pair Programming]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
+[![Pair Programming]({{ page.landing-image }}){: .landing-image.centered }]({{ page.landing-image }})
 
 It's been eleven years since I began my career as a professional software engineer. I've worked alongside others with various levels of experience, ranging from fresh graduates to seasoned veterans. Early in my career, I believed the best way to grow as a software engineer was to surround myself with engineers who were ["better"]({% link _posts/2012-07-19-be-best-by-learning-from-better.markdown %}) than me. Part of me still believes it today.
 
