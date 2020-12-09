@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Basic Rails Continuous Testing with Github Actions"
+title: "Basic Rails CI with Github Actions"
 date: 2020-05-18
 landing-image: "/assets/images/posts/something.png"
 comments: true

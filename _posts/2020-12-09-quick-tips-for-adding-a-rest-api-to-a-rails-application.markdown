@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Quick Tips for adding a REST API to a Rails Application"
-date: 2020-11-30
+date: 2020-12-09
 landing-image: "/assets/images/posts/api.png"
 comments: true
 ---
