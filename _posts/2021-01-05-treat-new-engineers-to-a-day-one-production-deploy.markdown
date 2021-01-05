@@ -30,7 +30,7 @@ After code is successfully deployed to production, it's a great opportunity to s
 
 ## Tips for an Awesome Day-One Deploy
 
-### Keep the task is small, but impactful
+### Keep the task small, but impactful
 
 Ideally, the task for a day-one deploy is small in scope and lower in priority. The code itself isn't the star of the show, the _development process_ is. That said, the task should have noticeable impact, even if it's small. For example, a copy-edit on the "About Us" page for the company is relatively small, but reaches a wide audience.
 
