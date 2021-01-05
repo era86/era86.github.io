@@ -42,4 +42,4 @@ _Never_, during any part of the day-one deploy, should a new engineer be left to
 
 It takes more than a day to learn the ins and outs of an engineering team. The tools, the people, the processes. All of it takes time. Rather than dive too deeply into one particular detail, keep it shallow. A day-one deploy is a bird's eye view. Encourage the new hire to ask questions, but defer any long-winded explanations until _after_ production is deployed.
 
-Got any other tips or tricks for success day-one deploys? Let me know in the comments!
+Got any other tips or tricks for successful day-one deploys? Let me know in the comments!
