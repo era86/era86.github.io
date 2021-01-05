@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Treat New Engineers to a Day-One Production Deploy"
-date: 2021-01-04
+date: 2021-01-05
 landing-image: "/assets/images/posts/rocket-launch.png"
 comments: true
 ---
