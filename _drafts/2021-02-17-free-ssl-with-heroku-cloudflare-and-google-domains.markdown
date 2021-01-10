@@ -2,11 +2,11 @@
 layout: post
 title: "Free SSL with Heroku, Cloudflare, and Google Domains"
 date: 2021-02-17
-landing-image: "/assets/images/posts/something.png"
+landing-image: "/assets/images/posts/cloudflare-hero.png"
 comments: true
 ---
 
-[![]({{ page.landing-image }}){: .bordered.landing-image.centered }]({{ page.landing-image }})
+[![]({{ page.landing-image }}){: .landing-image.centered }]({{ page.landing-image }})
 
 Recently, I went through the process of deploying a [small Rails application](https://blubtides.com) on Heroku and registering a custom domain with Google Domains for it. In today's web, [HTTPS encryption](https://www.cloudflare.com/learning/ssl/what-is-https/) is a _must have_, and I wanted it for my site.
 
