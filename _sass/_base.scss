@@ -136,10 +136,18 @@ blockquote {
  */
 pre,
 code {
-    font-size: 13px;
+    font-size: $small-font-size;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;
+
+    span {
+      line-height: 1.5em;
+    }
+
+    @include media-query($on-palm) {
+      font-size: $base-font-size * 0.80;
+    }
 }
 
 code {
