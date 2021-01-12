@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Easy Automated Rails Tests with Github Actions"
-date: 2021-01-20
+date: 2021-01-12
 landing-image: "/assets/images/posts/github-actions.png"
 comments: true
 ---
