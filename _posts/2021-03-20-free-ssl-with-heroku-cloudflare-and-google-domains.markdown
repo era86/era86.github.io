@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Free SSL with Heroku, Cloudflare, and Google Domains"
-date: 2021-02-17
+date: 2021-03-20
 landing-image: "/assets/images/posts/cloudflare-hero.png"
 comments: true
 ---
