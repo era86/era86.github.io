@@ -41,7 +41,7 @@ Ruby also has [many built-in methods](https://ruby-doc.org/core-2.6/Enumerable.h
 
 ## Explicit private methods
 
-[Encapsulation](https://stackify.com/oop-concept-for-beginners-what-is-encapsulation/) is an important concept in object-oriented programming. The ability to define and enforce private methods lets programmers declare the intended interface for any particular class.
+[Encapsulation](https://stackify.com/oop-concept-for-beginners-what-is-encapsulation/) is an important concept in [object-oriented programming](https://www.scaler.com/topics/what-is-object-oriented-programming-oop/). The ability to define and enforce private methods lets programmers declare the intended interface for any particular class.
 
 ### Python:
 
